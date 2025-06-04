@@ -197,9 +197,9 @@ If your autowiring is disabled, you will need also to register your `PremiumCust
 
 ```yaml
 services:    
-    App\Form\Extension\PremiumCustomerConfigurationType:
+    App\Form\Type\Rule\PremiumCustomerConfigurationType:
         tags:
-            - { name: form.type_extension }
+            - { name: form.type }
 ```
 {% endhint %}
 
