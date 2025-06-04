@@ -81,7 +81,7 @@
   * [Refunds](the-book/carts-and-orders/refunds.md)
 * [API](the-book/api/README.md)
   * [#todo](the-book/api/todo.md)
-* [Frondend & Themes](the-book/frondend-and-themes.md)
+* [🎨 Frontend & Themes](the-book/frondend-and-themes.md)
 * [➕ Sylius Plus](the-book/sylius-plus/README.md)
   * [➕ Loyalty](the-book/sylius-plus/loyalty.md)
 * [Support](the-book/support.md)
