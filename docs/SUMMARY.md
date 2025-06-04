@@ -1,11 +1,10 @@
 # Table of contents
 
 * [📖 Sylius Documentation](README.md)
-  * [Organization](sylius-2.0-documentation/organization/README.md)
-    * [Release Cycle](sylius-2.0-documentation/organization/release-cycle.md)
-    * [Backwards Compatibility Promise](sylius-2.0-documentation/organization/backwards-compatibility-promise.md)
-    * [Sylius Team](https://sylius.com/team/)
-    * [Sylius Roadmap](https://sylius.com/roadmap/?utm_source=docs)
+* [Organization](organization/README.md)
+  * [Sylius Team](https://sylius.com/team/)
+* [Release Cycle](release-cycle/README.md)
+  * [Backwards Compatibility Promise](release-cycle/backwards-compatibility-promise.md)
 
 ## Getting Started with Sylius
 

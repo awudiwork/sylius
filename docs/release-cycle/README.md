@@ -14,22 +14,22 @@ layout:
 
 # Release Cycle
 
-This document explains the **release cycle** of the Sylius project (i.e. the code & documentation hosted on the main `Sylius/Sylius` [repository](https://github.com/Sylius/Sylius)).
+This document explains the **release cycle** of the Sylius project (i.e., the code & documentation hosted on the main `Sylius/Sylius` [repository](https://github.com/Sylius/Sylius)).
 
 Sylius follows the [Semantic Versioning](https://semver.org/) strategy:
 
-* A new Sylius patch version (e.g. 1.14.1, 1.14.2, etc.) comes out usually _every 3 to 6 weeks_, depending on the number of bug fixes developed
-* A new Sylius minor version (e.g. 1.14, 2.1, 2.2, etc.) is released depending on various factors (see below), usually _every 3 to 6 months_
-* A new Sylius major version (e.g. 2.0, 3.0, etc.) is also released depending on various factors, usually _every 2 years_
+* A new Sylius patch version (e.g., 1.14.1, 1.14.2, etc.) usually comes out _every 3 to 6 weeks_, depending on the number of bug fixes developed
+* A new Sylius minor version (e.g., 1.14, 2.1, 2.2, etc.) is released depending on various factors (see below), usually _every 3 to 6 months_
+* A new Sylius major version (e.g,. 2.0, 3.0, etc.) is also released, depending on various factors, usually _every 2 years_
 
 New Sylius minor releases will drop unsupported PHP versions.
 
 ### Scope-based vs time-based
 
-The Sylius **release cycle** is **loosely** time-based (contrary to the [Symfony release cycle](https://symfony.com/releases)). Based on the experience from over 10 minor versions, we decided that time is not the only reason on which we should rely when planning the new Sylius’ version. Therefore, each new minor release of Sylius takes into consideration:
+The Sylius **release cycle** is **loosely** time-based (contrary to the [Symfony release cycle](https://symfony.com/releases)). Based on the experience from over 10 minor versions, we decided that time is not the only reason on which we should rely when planning the new Sylius version. Therefore, each new minor release of Sylius takes into consideration:
 
-* what we would like to include in it (features, improvements, fixes)
-* when we would like to release it (based on the Team capacity, estimated amount of work, and experience from previous minor releases development)
+* What we would like to include in it (features, improvements, fixes)
+* When we would like to release it (based on the Team capacity, estimated amount of work, and experience from previous minor releases development)
 
 {% hint style="info" %}
 The natural consequence of such a decision is uncertainty regarding the exact time of the next minor version release. We try to estimate it as precisely as possible, but sometimes delays cannot be avoided. We believe that releasing a **good** product is more important than releasing it **fast** 🤖
@@ -39,28 +39,27 @@ The natural consequence of such a decision is uncertainty regarding the exact ti
 
 The full development period for any minor version is divided into two phases:
 
-* **Development**: _The first 5/6 of the time intended for the release_ to add new features and to enhance existing ones.
+* **Development**: _The first 5/6 of the time is intended for the release_ to add new features and to enhance existing ones.
 * **Stabilization**: _The last 1/6 of the time intended for the release_ is to fix bugs, prepare the release, and wait for the whole Sylius ecosystem (third-party libraries, plugins, and projects using Sylius) to catch up.
 
-During both periods, any new feature can be reverted if it won’t be finished in time or won’t be stable enough to be included in the coming release.
+During both periods, any new feature can be reverted if it isn’t finished in time or isn’t stable enough to be included in the coming release.
 
 ### Maintenance
 
 Each minor Sylius version is maintained for a fixed time after its release. This maintenance is divided into:
 
-* _Bug fixes and security fixes_: During this period all issues can be fixed. The end of this period is referenced as being the _**end of maintenance**_ of a release.
-* _Security fixes only_: During this period, only security-related issues can be fixed. The end of this period is referenced as being the _**end of support**_ of a release.
+* _Bug fixes and security fixes_: During this period, all issues can be fixed. The end of this period is referenced as the _**end of maintenance**_ of a release.
+* _Security fixes only_: During this period, only security-related issues can be fixed. The end of this period is referenced as the _**end of support**_ for a release.
 
 ### Planned releases
 
 | Version | Development starts | Stabilization starts | Release date |
 | ------- | ------------------ | -------------------- | ------------ |
-| 2.1     | November 2024      | Q1/Q2 2025           | June 2025    |
 | 2.2     | June 2025          | Q3 2025              | Q4 2025      |
 
 ### Supported versions
 
-<table><thead><tr><th width="89">Version</th><th>Release date</th><th>End of maintenance</th><th>End of support</th><th>Status</th></tr></thead><tbody><tr><td>2.0</td><td>Nov 12, 2024</td><td>August 2025</td><td>February 2026</td><td>Fully supported</td></tr><tr><td><strong>1.14 (LTS)</strong></td><td><strong>Nov 12, 2024</strong></td><td><strong>December 2025</strong></td><td><strong>December 2026</strong></td><td><strong>Fully supported</strong></td></tr></tbody></table>
+<table><thead><tr><th width="89">Version</th><th>Release date</th><th>End of maintenance</th><th>End of support</th><th>Status</th></tr></thead><tbody><tr><td>2.1</td><td>Jun 4, 2025</td><td>March 2026</td><td>September 2026</td><td>Fully supported</td></tr><tr><td>2.0</td><td>Nov 12, 2024</td><td>August 2025</td><td>February 2026</td><td>Fully supported</td></tr><tr><td><strong>1.14 (LTS)</strong></td><td><strong>Nov 12, 2024</strong></td><td><strong>December 2025</strong></td><td><strong>December 2026</strong></td><td><strong>Fully supported</strong></td></tr></tbody></table>
 
 ### Unsupported versions
 

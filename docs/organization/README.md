@@ -18,8 +18,8 @@ We aim to shape the future of eCommerce, leveraging the strength of open source 
 
 This chapter describes the rules and processes we use to organize our work.
 
-{% content-ref url="backwards-compatibility-promise.md" %}
-[backwards-compatibility-promise.md](backwards-compatibility-promise.md)
+{% content-ref url="../release-cycle/backwards-compatibility-promise.md" %}
+[backwards-compatibility-promise.md](../release-cycle/backwards-compatibility-promise.md)
 {% endcontent-ref %}
 
 
