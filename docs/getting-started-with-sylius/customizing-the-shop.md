@@ -31,10 +31,10 @@ The default Sylius templates are clean and elegant, but you might want to make y
     ```bash
     assets/shop/images/logo.png
     ```
-2.  Next, you need to import the logo in the `entry.js` file located at:
+2.  Next, you need to import the logo in the `entrypoint.js` file located at:
 
     ```bash
-    assets/shop/entry.js
+    assets/shop/entrypoint.js
     ```
 3.  Add the following line to import the logo:
 
@@ -51,6 +51,8 @@ The default Sylius templates are clean and elegant, but you might want to make y
 Now, let’s create the template that is responsible for displaying the logo. All templates are supposed to be managed and organized in the `/templates` directory. Your new template might look like this:
 
 ```twig
+{# templates/shop/header/content/logo/content/logo.html.twig #}
+
 <img src="{{ asset('build/app/shop/images/logo.25de7998.png', 'app.shop') }}" alt="Logo"/>
 ```
 
@@ -82,7 +84,7 @@ sylius_twig_hooks:
     hooks:
         sylius_shop.base.header.content.logo:
             content:
-                template: 'header/content/logo/content/logo.html.twig'
+                template: 'shop/header/content/logo/content/logo.html.twig'
 
 ```
 
