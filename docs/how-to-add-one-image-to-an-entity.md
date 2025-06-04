@@ -244,7 +244,7 @@ final class ImageUploadSubscriber implements EventSubscriberInterface
 services:
     App\EventSubscriber\ImageUploadSubscriber:
         arguments:
-            - '@sylius.image_uploader'
+            - '@sylius.uploader.image'
         tags:
             - { name: kernel.event_subscriber }
 ```
@@ -308,6 +308,7 @@ Find out more about twig hooks [here](https://stack.sylius.com/twig-hooks/gettin
 
 ```php
 // App\Entity\Payment\PaymentMethodImage.php
+
 use Symfony\Component\Validator\Constraints as Assert;
 
 #[Assert\Image(
@@ -321,6 +322,9 @@ protected $file;
 
 ```php
 // App\Entity\Payment\PaymentMethod.php
+
+use Symfony\Component\Validator\Constraints as Assert;
+
 #[Assert\Valid]
 protected ?PaymentMethodImage $image = null;
 ```

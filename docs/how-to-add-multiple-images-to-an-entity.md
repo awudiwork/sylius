@@ -32,7 +32,7 @@ This guide explains how to associate **multiple images** with a single entity in
 ```php
 <?php
 
-// src/Entity/ShippingMethodImage.php
+// src/Entity/Shipping/ShippingMethodImage.php
 
 namespace App\Entity\Shipping;
 
@@ -64,7 +64,7 @@ class ShippingMethodImage extends Image
 ```php
 <?php
 
-// src/Entity/ShippingMethod.php
+// src/Entity/Shipping/ShippingMethod.php
 
 namespace App\Entity\Shipping;
 
@@ -140,7 +140,7 @@ sylius_resource:
     resources:
         app.shipping_method_image:
             classes:
-                model: App\Entity\ShippingMethodImage
+                model: App\Entity\Shipping\ShippingMethodImage
                 form: App\Form\Type\ShippingMethodImageType
 ```
 
@@ -266,6 +266,8 @@ use Symfony\Component\Validator\Constraints as Assert;
 ```php
 // App\Entity\Shipping\ShippingMethod.php
 
+use Symfony\Component\Validator\Constraints as Assert;
+
 #[Assert\Valid]
 private Collection $images;
 ```
@@ -372,7 +374,16 @@ sylius_twig_hooks:
 
 ***
 
-#### Step 9: Result <a href="#step-8-customize-the-shipping-method-twig-hooks" id="step-8-customize-the-shipping-method-twig-hooks"></a>
+### Step 9: Generate and Run Migrations
+
+```bash
+php bin/console doctrine:migrations:diff
+php bin/console doctrine:migrations:migrate
+```
+
+***
+
+### Step 10: Result <a href="#step-8-customize-the-shipping-method-twig-hooks" id="step-8-customize-the-shipping-method-twig-hooks"></a>
 
 <figure><img src=".gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
 
