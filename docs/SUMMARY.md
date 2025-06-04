@@ -1,6 +1,6 @@
 # Table of contents
 
-* [📖 Sylius 2.0 Documentation](README.md)
+* [📖 Sylius Documentation](README.md)
   * [Organization](sylius-2.0-documentation/organization/README.md)
     * [Release Cycle](sylius-2.0-documentation/organization/release-cycle.md)
     * [Backwards Compatibility Promise](sylius-2.0-documentation/organization/backwards-compatibility-promise.md)
@@ -84,11 +84,6 @@
 * [Frondend & Themes](the-book/frondend-and-themes.md)
 * [➕ Sylius Plus](the-book/sylius-plus/README.md)
   * [➕ Loyalty](the-book/sylius-plus/loyalty.md)
-* [Sylius Plugins](the-book/sylius-plugins/README.md)
-  * [How to create a plugin for Sylius?](the-book/sylius-plugins/how-to-create-a-plugin-for-sylius.md)
-  * [🏗️ Plugin Development Guide](the-book/sylius-plugins/plugin-development-guide.md)
-  * [Official Sylius Plugins](the-book/sylius-plugins/official-sylius-plugins.md)
-  * [Sylius Store](the-book/sylius-plugins/sylius-store.md)
 * [Support](the-book/support.md)
 * [Contributing](the-book/contributing/README.md)
   * [Contributing Code](the-book/contributing/contributing-code/README.md)

@@ -19,11 +19,11 @@ We hope you’ve enjoyed your first steps with Sylius! Now that you’ve gained 
 #### A Few Tips Before You Go:
 
 * **Want to dive deeper into Sylius features?**\
-  Check out [The Book](../the-book/index.md), where you'll find comprehensive information on everything Sylius has to offer.
+  Check out [The Book](../the-book/introduction-to-sylius.md), where you'll find comprehensive information on everything Sylius has to offer.
 * **Interested in making more customizations?**\
   Explore [The Customization Guide](../the-customization-guide/index.md) for insights on how to tailor Sylius to your unique needs.
 * **Have cool features to share with the community?**\
-  Head over to the [Sylius Plugins](../the-book/sylius-plugins/) chapter to learn how to contribute your work.
+  Head over to the [Sylius Plugins](broken-reference) chapter to learn how to contribute your work.
 
 ***
 
