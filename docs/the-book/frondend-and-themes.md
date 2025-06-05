@@ -42,7 +42,7 @@ To effectively customize the Sylius frontend, refer to the following documentati
   Discover methods to adjust styles using Bootstrap 5 variables, override CSS, and manage assets with Webpack Encore for a tailored visual appearance.
 * [**Customizing Dynamic Elements**](../the-customization-guide/customizing-dynamic-elements.md) \
   Understand how to enhance interactivity by integrating StimulusJS controllers, utilizing Symfony UX, and injecting dynamic behavior through Twig hooks.
-* Customizing Forms \
+* [**Customizing Forms**](../the-customization-guide/customizing-forms/) \
   Explore techniques to modify forms, including adding or removing fields, altering labels, and implementing live components for dynamic form interactions.
 * [**Customizing Menus**](https://docs.sylius.com/the-customization-guide/customizing-menus) \
   Add new menu items or modify existing ones in both the Shop and Admin panels.
