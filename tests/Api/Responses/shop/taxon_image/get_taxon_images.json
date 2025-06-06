@@ -18,11 +18,5 @@
             "type": "banner",
             "path": "http:\/\/localhost\/media\/cache\/resolve\/sylius_original\/uo\/banner.jpg"
         }
-    ],
-    "hydra:search": {
-        "@type": "hydra:IriTemplate",
-        "hydra:template": "\/api\/v2\/shop\/taxons\/CATEGORY\/images{?}",
-        "hydra:variableRepresentation": "BasicRepresentation",
-        "hydra:mapping": []
-    }
+    ]
 }
