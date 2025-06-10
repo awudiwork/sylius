@@ -84,6 +84,7 @@ jobs:
                     composer require winzou/state-machine-bundle:^0.6 --no-update   
 
             -   name: Prepare manifest.json files
+                if: "${{ inputs.branch != '1.14' }}"
                 run: |
                     mkdir -p public/build/admin
                     mkdir -p public/build/shop

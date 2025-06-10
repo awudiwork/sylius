@@ -81,6 +81,7 @@ jobs:
                 run: composer require --no-update --no-scripts --no-interaction "twig/twig:${{ matrix.twig }}"
 
             -   name: Prepare manifest.json files
+                if: "${{ inputs.branch != '1.14' }}"
                 run: |
                     mkdir -p public/build/admin
                     mkdir -p public/build/shop
