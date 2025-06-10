@@ -60,10 +60,10 @@ jobs:
                 env:
                     BRANCH: ${{ inputs.branch }}
                 run: |
-                    if [ "$BRANCH" == "1.12" ]; then
-                        echo "USE_LEGACY_POSTGRES_SETUP=yes" >> $GITHUB_ENV
+                    if [ "$BRANCH" == "1.14" ]; then
+                        echo "NODE_VERSION=20.x" >> $GITHUB_ENV
                     else
-                        echo "USE_LEGACY_POSTGRES_SETUP=no" >> $GITHUB_ENV
+                        echo "NODE_VERSION=24.x" >> $GITHUB_ENV
                     fi
 
             -   name: "Checkout (With Branch)"
@@ -96,10 +96,9 @@ jobs:
                     e2e: "yes"
                     database: "postgresql"
                     database_version: ${{ matrix.postgres }}
-                    legacy_postgresql_setup: ${{ env.USE_LEGACY_POSTGRES_SETUP }}
                     php_version: ${{ matrix.php }}
                     symfony_version: ${{ matrix.symfony }}
-                    node_version: "24.x"
+                    node_version: ${{ env.NODE_VERSION }}
                     chrome_version: stable
 
             -   name: Run PHPUnit

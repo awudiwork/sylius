@@ -60,10 +60,10 @@ jobs:
                 env:
                     BRANCH: ${{ inputs.branch }}
                 run: |
-                    if [ "$BRANCH" == "1.12" ]; then
-                        echo "USE_LEGACY_POSTGRES_SETUP=yes" >> $GITHUB_ENV
+                    if [ "$BRANCH" == "1.14" ]; then
+                        echo "NODE_VERSION=20.x" >> $GITHUB_ENV
                     else
-                        echo "USE_LEGACY_POSTGRES_SETUP=no" >> $GITHUB_ENV
+                        echo "NODE_VERSION=24.x" >> $GITHUB_ENV
                     fi
 
             -   name: "Checkout (With Branch)"
@@ -99,10 +99,9 @@ jobs:
                     cache_restore_key: "${{ github.run_id }}-${{ runner.os }}-${{ hashFiles('composer.json') }}-symfony-${{ matrix.symfony }}"
                     e2e: "yes"
                     database_version: ${{ matrix.mysql }}
-                    legacy_postgresql_setup: ${{ env.USE_LEGACY_POSTGRES_SETUP }}
                     php_version: ${{ matrix.php }}
                     symfony_version: ${{ matrix.symfony }}
-                    node_version: "24.x"
+                    node_version: ${{ env.NODE_VERSION }}
 
             -   name: Fix permissions for Symfony logs directory
                 run: |
@@ -155,10 +154,10 @@ jobs:
                 env:
                     BRANCH: ${{ inputs.branch }}
                 run: |
-                    if [ "$BRANCH" == "1.12" ]; then
-                        echo "USE_LEGACY_POSTGRES_SETUP=yes" >> $GITHUB_ENV
+                    if [ "$BRANCH" == "1.14" ]; then
+                        echo "NODE_VERSION=20.x" >> $GITHUB_ENV
                     else
-                        echo "USE_LEGACY_POSTGRES_SETUP=no" >> $GITHUB_ENV
+                        echo "NODE_VERSION=24.x" >> $GITHUB_ENV
                     fi
 
             -   name: "Checkout (With Branch)"
@@ -195,10 +194,9 @@ jobs:
                     e2e: "yes"
                     e2e_js: "yes"
                     database_version: ${{ matrix.mysql }}
-                    legacy_postgresql_setup: ${{ env.USE_LEGACY_POSTGRES_SETUP }}
                     php_version: ${{ matrix.php }}
                     symfony_version: ${{ matrix.symfony }}
-                    node_version: "24.x"
+                    node_version: ${{ env.NODE_VERSION }}
 
             -   name: Run Behat (Chromedriver)
                 run: |
@@ -212,7 +210,7 @@ jobs:
                     vendor/bin/behat --colors --strict --no-interaction -vvv -f progress --tags="@mink:chromedriver&&~@todo&&~@cli&&@failing" --suite-tags="@hybrid,@ui" --rerun || \
                     vendor/bin/behat --colors --strict --no-interaction -vvv -f progress --tags="@mink:chromedriver&&~@todo&&~@cli&&@failing" --suite-tags="@hybrid,@ui" --rerun
                 continue-on-error: true
-            
+
             -   name: Upload logs
                 uses: actions/upload-artifact@v4
                 if: failure()
@@ -243,10 +241,10 @@ jobs:
                 env:
                     BRANCH: ${{ inputs.branch }}
                 run: |
-                    if [ "$BRANCH" == "1.12" ]; then
-                        echo "USE_LEGACY_POSTGRES_SETUP=yes" >> $GITHUB_ENV
+                    if [ "$BRANCH" == "1.14" ]; then
+                        echo "NODE_VERSION=20.x" >> $GITHUB_ENV
                     else
-                        echo "USE_LEGACY_POSTGRES_SETUP=no" >> $GITHUB_ENV
+                        echo "NODE_VERSION=24.x" >> $GITHUB_ENV
                     fi
 
             -   name: "Checkout (With Branch)"
@@ -283,10 +281,9 @@ jobs:
                     e2e: "yes"
                     e2e_js: "yes"
                     database_version: ${{ matrix.mysql }}
-                    legacy_postgresql_setup: ${{ env.USE_LEGACY_POSTGRES_SETUP }}
                     php_version: ${{ matrix.php }}
                     symfony_version: ${{ matrix.symfony }}
-                    node_version: "24.x"
+                    node_version: ${{ env.NODE_VERSION }}
                     chrome_version: stable
 
             -   name: Run Behat (Panther)

@@ -33,6 +33,16 @@ jobs:
             DATABASE_URL: "mysql://root:root@127.0.0.1/sylius?charset=utf8mb4&serverVersion=${{ matrix.mysql }}"
 
         steps:
+            -   name: Set variables
+                shell: bash
+                env:
+                    BRANCH: ${{ inputs.branch }}
+                run: |
+                    if [ "$BRANCH" == "1.14" ]; then
+                        echo "NODE_VERSION=20.x" >> $GITHUB_ENV
+                    else
+                        echo "NODE_VERSION=24.x" >> $GITHUB_ENV
+                    fi
             -
                 uses: actions/checkout@v4
 
@@ -40,7 +50,7 @@ jobs:
                 run: |
                     composer config minimum-stability dev
                     composer config prefer-stable true
-                    
+
             -   name: Prepare manifest.json files
                 run: |
                     mkdir -p public/build/admin
@@ -51,7 +61,7 @@ jobs:
                     echo "{}" > public/build/shop/manifest.json
                     echo "{}" > public/build/app/admin/manifest.json
                     echo "{}" > public/build/app/shop/manifest.json
-            
+
             -   name: Build application
                 uses: SyliusLabs/BuildTestAppAction@v2.4
                 with:
@@ -62,7 +72,7 @@ jobs:
                     database_version: ${{ matrix.mysql }}
                     php_version: ${{ matrix.php }}
                     symfony_version: ${{ matrix.symfony }}
-                    node_version: "24.x"
+                    node_version: ${{ env.NODE_VERSION }}
 
             -   name: Run PHPUnit
                 continue-on-error: ${{ inputs.ignore-failure }}
@@ -106,6 +116,17 @@ jobs:
             DATABASE_URL: "mysql://root:root@127.0.0.1/sylius?charset=utf8mb4&serverVersion=${{ matrix.mysql }}"
 
         steps:
+            -   name: Set variables
+                shell: bash
+                env:
+                    BRANCH: ${{ inputs.branch }}
+                run: |
+                    if [ "$BRANCH" == "1.14" ]; then
+                        echo "NODE_VERSION=20.x" >> $GITHUB_ENV
+                    else
+                        echo "NODE_VERSION=24.x" >> $GITHUB_ENV
+                    fi
+
             -   name: "Checkout (With Branch)"
                 if: "${{ inputs.branch != '' }}"
                 uses: actions/checkout@v4
@@ -141,10 +162,9 @@ jobs:
                     e2e: "yes"
                     e2e_js: "yes"
                     database_version: ${{ matrix.mysql }}
-                    legacy_postgresql_setup: "no"
                     php_version: ${{ matrix.php }}
                     symfony_version: ${{ matrix.symfony }}
-                    node_version: "24.x"
+                    node_version: ${{ env.NODE_VERSION }}
 
             -   name: Run Behat (Chromedriver)
                 run: |
@@ -188,6 +208,17 @@ jobs:
             DATABASE_URL: "mysql://root:root@127.0.0.1/sylius?charset=utf8mb4&serverVersion=${{ matrix.mysql }}"
 
         steps:
+            -   name: Set variables
+                shell: bash
+                env:
+                    BRANCH: ${{ inputs.branch }}
+                run: |
+                    if [ "$BRANCH" == "1.14" ]; then
+                        echo "NODE_VERSION=20.x" >> $GITHUB_ENV
+                    else
+                        echo "NODE_VERSION=24.x" >> $GITHUB_ENV
+                    fi
+
             -   name: "Checkout (With Branch)"
                 if: "${{ inputs.branch != '' }}"
                 uses: actions/checkout@v4
@@ -226,7 +257,7 @@ jobs:
                     legacy_postgresql_setup: "no"
                     php_version: ${{ matrix.php }}
                     symfony_version: ${{ matrix.symfony }}
-                    node_version: "24.x"
+                    node_version: ${{ env.NODE_VERSION }}
                     chrome_version: stable
 
             -   name: Run Behat (Panther)
