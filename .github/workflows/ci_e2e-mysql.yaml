@@ -275,7 +275,23 @@ jobs:
                 if: matrix.twig == '^2.12'
                 run: composer require --no-update --no-scripts --no-interaction "twig/twig:${{ matrix.twig }}"
 
+            -   name: Build application for Full 1.14 build
+                if: "${{ inputs.branch == '1.14' }}"
+                uses: SyliusLabs/BuildTestAppAction@v2.3
+                with:
+                    build_type: "sylius"
+                    cache_key: "${{ github.run_id }}-${{ runner.os }}-${{ hashFiles('composer.json') }}-symfony-${{ matrix.symfony }}"
+                    cache_restore_key: "${{ github.run_id }}-${{ runner.os }}-${{ hashFiles('composer.json') }}-symfony-${{ matrix.symfony }}"
+                    e2e: "yes"
+                    e2e_js: "yes"
+                    database_version: ${{ matrix.mysql }}
+                    php_version: ${{ matrix.php }}
+                    symfony_version: ${{ matrix.symfony }}
+                    node_version: ${{ env.NODE_VERSION }}
+                    chrome_version: stable
+
             -   name: Build application
+                if: "${{ inputs.branch != '1.14' }}"
                 uses: SyliusLabs/BuildTestAppAction@v2.4
                 with:
                     build_type: "sylius"
