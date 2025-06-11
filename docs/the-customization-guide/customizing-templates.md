@@ -375,7 +375,7 @@ Clear the cache if changes aren't visible: `php bin/console cache:clear`
 ## Customizing Templates via Sylius Themes
 
 {% hint style="info" %}
-Read more in the [Themes documentation in The Book](../the-book/frondend-and-themes.md) and [the bundle's documentation on GitHub](https://github.com/Sylius/SyliusThemeBundle/blob/master/docs/index.md).
+Read more in the [Themes documentation in The Book](../the-book/frontend-and-themes.md) and [the bundle's documentation on GitHub](https://github.com/Sylius/SyliusThemeBundle/blob/master/docs/index.md).
 {% endhint %}
 
 ## Global Twig variables
