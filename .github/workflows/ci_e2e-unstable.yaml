@@ -40,7 +40,7 @@ jobs:
                 run: |
                     composer config minimum-stability dev
                     composer config prefer-stable true
-                    
+
             -   name: Prepare manifest.json files
                 run: |
                     mkdir -p public/build/admin
@@ -51,7 +51,7 @@ jobs:
                     echo "{}" > public/build/shop/manifest.json
                     echo "{}" > public/build/app/admin/manifest.json
                     echo "{}" > public/build/app/shop/manifest.json
-            
+
             -   name: Build application
                 uses: SyliusLabs/BuildTestAppAction@v2.4
                 with:
@@ -141,7 +141,6 @@ jobs:
                     e2e: "yes"
                     e2e_js: "yes"
                     database_version: ${{ matrix.mysql }}
-                    legacy_postgresql_setup: "no"
                     php_version: ${{ matrix.php }}
                     symfony_version: ${{ matrix.symfony }}
                     node_version: "24.x"
