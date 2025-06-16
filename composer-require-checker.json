@@ -4,6 +4,7 @@
     "static", "self", "parent",
     "array", "string", "int", "float", "bool", "iterable", "callable", "void", "object", "mixed", "never",
     "random_bytes", "random_int",
+    "trigger_deprecation",
     "ApiPlatform\\Doctrine\\Common\\Filter\\OrderFilterInterface",
     "ApiPlatform\\Hydra\\Serializer\\CollectionFiltersNormalizer",
     "ApiPlatform\\JsonLd\\Serializer\\HydraPrefixTrait",
@@ -117,7 +118,12 @@
     "Symfony\\Component\\ErrorHandler\\Exception\\FlattenException",
     "Symfony\\Component\\Security\\Core\\Encoder\\EncoderFactoryInterface",
     "Symfony\\Component\\WebLink\\Link",
+    "Symfony\\Contracts\\Cache\\CacheInterface",
+    "Symfony\\Contracts\\Cache\\ItemInterface",
     "Symfony\\Contracts\\EventDispatcher\\Event",
+    "Symfony\\Contracts\\Service\\ResetInterface",
+    "Symfony\\Contracts\\Service\\ServiceProviderInterface",
+    "Symfony\\Contracts\\Translation\\TranslatorInterface",
     "winzou\\Bundle\\StateMachineBundle\\winzouStateMachineBundle"
   ],
   "php-core-extensions" : [

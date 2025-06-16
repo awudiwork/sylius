@@ -32,6 +32,7 @@
         "ext-simplexml": "*",
         "ext-sodium": "*",
         "api-platform/doctrine-orm": "^4.1.7",
+        "api-platform/state": "^4.1.7",
         "api-platform/symfony": "^4.1.7",
         "babdev/pagerfanta-bundle": "^4.4",
         "behat/transliterator": "^1.5",
