@@ -26,6 +26,12 @@ This guide explains how to customize and register **JavaScript controllers** in 
 * Webpack Encore is properly configured
 * Basic knowledge of StimulusJS
 
+### ⚠️ Compatibility Note
+
+{% hint style="danger" %}
+If your application is based on Sylius/Standard prior to the 2.1 release, you must first upgrade your project as outlined [here](https://github.com/Sylius/Sylius-Standard/pull/1126). Without this upgrade, your app will rely on the legacy assets system, and this guide will not apply.
+{% endhint %}
+
 ***
 
 ## Example Use Cases
@@ -108,6 +114,12 @@ Hook your controller’s template into the desired part of the admin UI using th
 
 This ensures your controller is rendered at the `sylius_admin.order.show.content` hook point, **without overriding core templates**.
 
+#### 4. Rebuild your assets
+
+```bash
+yarn build # or yarn watch
+```
+
 <figure><img src="../.gitbook/assets/image (37).png" alt=""><figcaption><p><strong>✅ Result:</strong> The alert will be shown every time you enter the order show page!</p></figcaption></figure>
 
 #### Result
@@ -144,6 +156,12 @@ To prevent the built-in `taxon-tree` Stimulus controller from loading:
 ```
 
 This disables the controller entirely (`enabled: false`), and even if enabled, it would only load lazily.
+
+#### &#x20;Rebuild your assets after the change
+
+```bash
+yarn build # or yarn watch
+```
 
 <figure><img src="../.gitbook/assets/image (38).png" alt=""><figcaption><p><strong>✅ Result:</strong> Taxon tree is no longer visible.</p></figcaption></figure>
 
@@ -200,10 +218,8 @@ This controller defines a `connect()` lifecycle method and an `onClick()` action
 ```javascript
 // assets/shop/bootstrap.js
 
-import { Application } from '@hotwired/stimulus';
 import ConfirmController from './custom/confirm_controller';
 
-const app = Application.start();
 app.register('confirm', ConfirmController);
 ```
 
@@ -244,21 +260,18 @@ sylius_twig_hooks:
 
 This hook ensures that your controller-powered button is shown after order placement, regardless of user type.
 
+#### 5. Rebuild your assets
+
+```bash
+yarn build # or yarn watch
+```
+
 <figure><img src="../.gitbook/assets/image (40).png" alt=""><figcaption><p><strong>✅ Result:</strong> A new button appears that logs to the console every time it is clicked!</p></figcaption></figure>
-
-***
-
-### ⚠️ Compatibility Note
-
-{% hint style="danger" %}
-If your application is based on Sylius/Standard prior to the 2.1 release, you must first upgrade your project as outlined [here](https://github.com/Sylius/Sylius-Standard/pull/1126). Without this upgrade, your app will rely on the legacy assets system, and this guide will not apply.
-{% endhint %}
 
 ***
 
 ## 🐞 Troubleshooting Tips
 
-* **Controller Not Executing?** Ensure Webpack Encore has rebuilt your assets (`yarn dev` or `yarn build`).
 * **Incorrect Controller Name?** Verify that the `data-controller` attribute matches the registered controller name.
 * **Console Errors?** Use browser developer tools to check if your controller is compiled and loaded correctly.
 * **Caching Issues?** Clear both Symfony and browser caches to ensure the latest assets are loaded.
