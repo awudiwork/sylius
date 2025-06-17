@@ -169,7 +169,7 @@ class ShowPage extends SymfonyPage implements ShowPageInterface
             'payment_price' => '[data-test-payment-price]',
             'payment_state' => '[data-test-payment-state]',
             'product_name' => '[data-test-order-table] [data-test-product-name="%productName%"]',
-            'product_price' => '[data-test-order-table] td:nth-child(2)',
+            'product_price' => '[data-test-order-table] [data-test-product-unit-price]',
             'shipment_state' => '[data-test-shipment-state]',
             'shipping_address' => '[data-test-shipping-address]',
             'subtotal' => '[data-test-subtotal]',
