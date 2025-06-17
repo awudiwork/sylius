@@ -32,7 +32,7 @@ To display and customize catalog promotion labels on the product show page:
 
 ### **1. Inspect the Element to Find Hook Definitions**
 
-<figure><img src="../.gitbook/assets/image (46).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (46).png" alt=""><figcaption></figcaption></figure>
 
 The catalog promotion labels are rendered via the following Twig hook:
 
@@ -87,7 +87,7 @@ sylius_twig_hooks:
 
 ### ✅ Result
 
-<figure><img src="../.gitbook/assets/image (43).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (43).png" alt=""><figcaption></figcaption></figure>
 
 After implementing these changes, the catalog promotion labels will be displayed with your custom template on the product show page.
 
@@ -99,7 +99,7 @@ Inspect a product card (e.g., on the category or search result page).
 
 ### **1. Inspect the Element to Find Hook Definitions**
 
-<figure><img src="../.gitbook/assets/image (44).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (44).png" alt=""><figcaption></figcaption></figure>
 
 The catalog promotion labels are rendered via the following hook:
 
@@ -154,7 +154,7 @@ sylius_twig_hooks:
 
 ### ✅ Result
 
-<figure><img src="../.gitbook/assets/image (45).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (45).png" alt=""><figcaption></figcaption></figure>
 
 After implementing these changes, the catalog promotion labels will be displayed with your custom template on the product index page.
 

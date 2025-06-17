@@ -152,9 +152,9 @@ sylius:
 
 ### ✅ Result
 
-<figure><img src="../.gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (42).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (42).png" alt=""><figcaption></figcaption></figure>
 
 You can now select **"By phrase"** as a scope type when creating or editing catalog promotions. All product variants whose names contain the given phrase will be eligible for the promotion.
 

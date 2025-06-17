@@ -142,7 +142,7 @@ To test the rule, configure a product variant with a shipping volume that does n
 
 * Edit the "Ocean Wave Jeans" product variant and set its properties. This will make it not meet the volume limit in the next step.
 
-<figure><img src="../.gitbook/assets/image (51).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (51).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -154,13 +154,13 @@ Next, configure the new shipping method rule to enforce the volume constraint.
 
 * Set the shipping method (e.g., `DHL Express`) to have a maximum volume limit of 100.
 
-<figure><img src="../.gitbook/assets/image (52).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (52).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ### ✅ Result
 
-<figure><img src="../.gitbook/assets/image (53).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (53).png" alt=""><figcaption></figcaption></figure>
 
 After completing these steps, you will have successfully created a custom shipping method rule that only makes a shipping method available if the product's volume meets the specified conditions. In this case, the "Ocean Wave Jeans" product variant, with its volume set to 1000, will not be eligible for the `DHL Express` shipping method, which has a maximum volume of 100.
 
