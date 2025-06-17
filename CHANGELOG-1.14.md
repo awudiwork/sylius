@@ -1,5 +1,13 @@
 # CHANGELOG FOR `1.14.X`
 
+## v1.14.6 (2025-06-17)
+
+#### Details
+
+- [#17952](https://github.com/Sylius/Sylius/pull/17952) Add instruction doc for disabling Mollie on Sylius Standard ([@TheMilek](https://github.com/TheMilek))
+- [#17960](https://github.com/Sylius/Sylius/pull/17960) [Admin] Missing role icon in menu ([@PiotrTulacz](https://github.com/PiotrTulacz))
+- [#18155](https://github.com/Sylius/Sylius/pull/18155) [ProductBundle] Fix ProductAttributeValue mapping to use ProductAttributeInterface ([@michalsemelka](https://github.com/michalsemelka))
+
 ## v1.14.5 (2025-05-07)
 
 #### Details
