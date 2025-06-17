@@ -53,7 +53,7 @@ Now, let’s create the template that is responsible for displaying the logo. Al
 ```twig
 {# templates/shop/header/content/logo/content/logo.html.twig #}
 
-<img src="{{ asset('build/app/shop/images/logo.25de7998.png', 'app.shop') }}" alt="Logo"/>
+<img src="{{ asset('build/app/shop/images/logo.png', 'app.shop') }}" alt="Logo"/>
 ```
 
 Ensure the second argument in the `asset()` function is correct for the app context. For more details, check the [Managing Assets](../the-book/frontend-and-themes.md) page.
