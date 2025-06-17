@@ -1,5 +1,46 @@
 # CHANGELOG FOR `2.1.X`
 
+## v2.1.2 (2025-06-17)
+
+#### Details
+
+- [#18128](https://github.com/Sylius/Sylius/pull/18128) [2.0] Swedish translations ([@SzymonFilipek](https://github.com/SzymonFilipek))
+- [#18129](https://github.com/Sylius/Sylius/pull/18129) [2.0] Portuguese translations ([@SzymonFilipek](https://github.com/SzymonFilipek))
+- [#18130](https://github.com/Sylius/Sylius/pull/18130) [2.0] Japanese translations ([@SzymonFilipek](https://github.com/SzymonFilipek))
+- [#18132](https://github.com/Sylius/Sylius/pull/18132) [2.0] Hindi translations ([@SzymonFilipek](https://github.com/SzymonFilipek))
+- [#18131](https://github.com/Sylius/Sylius/pull/18131) [2.0] Korean translations ([@SzymonFilipek](https://github.com/SzymonFilipek))
+- [#18140](https://github.com/Sylius/Sylius/pull/18140) Fix AddressExampleFactory ([@mpysiak](https://github.com/mpysiak))
+- [#18138](https://github.com/Sylius/Sylius/pull/18138) [API][Shop] Add more images endpoints ([@NoResponseMate](https://github.com/NoResponseMate))
+- [#18154](https://github.com/Sylius/Sylius/pull/18154) [Bunnyshell] Increase memory limit ([@GSadee](https://github.com/GSadee))
+- [#18149](https://github.com/Sylius/Sylius/pull/18149) [Admin] Fix defining fallback url for back button ([@GSadee](https://github.com/GSadee))
+- [#18156](https://github.com/Sylius/Sylius/pull/18156) Add initial AGENTS.md ([@mpysiak](https://github.com/mpysiak))
+- [#18158](https://github.com/Sylius/Sylius/pull/18158) Make reference to global agents file for GitHub Copilot ([@Prometee](https://github.com/Prometee))
+- [#18148](https://github.com/Sylius/Sylius/pull/18148) [Maintenance] GA fixes ([@NoResponseMate](https://github.com/NoResponseMate))
+- [#18160](https://github.com/Sylius/Sylius/pull/18160) [Admin] Fix back button ([@GSadee](https://github.com/GSadee))
+- [#18163](https://github.com/Sylius/Sylius/pull/18163) Update AGENTS.md ([@mpysiak](https://github.com/mpysiak))
+- [#18162](https://github.com/Sylius/Sylius/pull/18162) Agents.md 2.0 css part ([@PiotrTulacz](https://github.com/PiotrTulacz))
+- [#18167](https://github.com/Sylius/Sylius/pull/18167) [Composer] Add explicitly api-platform/state dependency to install the proper version of package ([@GSadee](https://github.com/GSadee))
+- [#18108](https://github.com/Sylius/Sylius/pull/18108) [API][Shop] Expose taxon branch structure ([@NoResponseMate](https://github.com/NoResponseMate))
+- [#18151](https://github.com/Sylius/Sylius/pull/18151) [2.0] Austrian German translations ([@SzymonFilipek](https://github.com/SzymonFilipek))
+- [#18150](https://github.com/Sylius/Sylius/pull/18150) [2.0] Swiss German translations ([@SzymonFilipek](https://github.com/SzymonFilipek))
+- [#18143](https://github.com/Sylius/Sylius/pull/18143) [2.0] Czech translations ([@SzymonFilipek](https://github.com/SzymonFilipek))
+- [#18146](https://github.com/Sylius/Sylius/pull/18146) [2.0] Slovakian translations ([@SzymonFilipek](https://github.com/SzymonFilipek))
+- [#18145](https://github.com/Sylius/Sylius/pull/18145) [2.0] Romanian translations ([@SzymonFilipek](https://github.com/SzymonFilipek))
+- [#18144](https://github.com/Sylius/Sylius/pull/18144) [2.0] Italian translations ([@SzymonFilipek](https://github.com/SzymonFilipek))
+- [#18164](https://github.com/Sylius/Sylius/pull/18164) [CS][DX] Refactor
+- [#18152](https://github.com/Sylius/Sylius/pull/18152) [Admin] Product Channel Pricings flex display and margin on the last element ([@PiotrTulacz](https://github.com/PiotrTulacz))
+- [#18133](https://github.com/Sylius/Sylius/pull/18133) [CS][DX] Refactor
+- [#18169](https://github.com/Sylius/Sylius/pull/18169) [Behat] Fix product setup invalid exception catch ([@NoResponseMate](https://github.com/NoResponseMate))
+- [#18172](https://github.com/Sylius/Sylius/pull/18172) Require File instead of UploadedFile in AllowedImageMimeTypesValidator ([@mmenozzi](https://github.com/mmenozzi))
+- [#18155](https://github.com/Sylius/Sylius/pull/18155) [ProductBundle] Fix ProductAttributeValue mapping to use ProductAttributeInterface ([@michalsemelka](https://github.com/michalsemelka))
+- [#18135](https://github.com/Sylius/Sylius/pull/18135) [Shop][Behat] Use test attribute on the order show page ([@Wojdylak](https://github.com/Wojdylak))
+- [#18126](https://github.com/Sylius/Sylius/pull/18126) [Maintenance] Note API changes ([@NoResponseMate](https://github.com/NoResponseMate))
+- [#18174](https://github.com/Sylius/Sylius/pull/18174) [ApiBundle] Migrate remaining phpspec to PHPUnit tests ([@GSadee](https://github.com/GSadee))
+- [#18157](https://github.com/Sylius/Sylius/pull/18157) [Shop] Shop WCAG raport ([@PiotrTulacz](https://github.com/PiotrTulacz))
+- [#18177](https://github.com/Sylius/Sylius/pull/18177) Product image replace ([@PiotrTulacz](https://github.com/PiotrTulacz))
+- [#18180](https://github.com/Sylius/Sylius/pull/18180) [Shop] Html lables translation ([@PiotrTulacz](https://github.com/PiotrTulacz))
+- [#18181](https://github.com/Sylius/Sylius/pull/18181) Update translations for 2.1 keys ([@SyliusBot](https://github.com/SyliusBot))
+
 ## v2.1.1 (2025-06-04)
 
 #### Details
