@@ -16,7 +16,7 @@ Welcome, 🤖 AI assistant! Please follow these guidelines when contributing to 
 
 ### Compatibility & Security
 
-- Ensure compatibility with **Symfony 6.4 and 7.x**, and **PHP 8.2 or higher**
+- Ensure compatibility with **Symfony** and **PHP** versions defined in `composer.json`
 - For API configuration, use **API Platform 4.x**
 - Follow secure coding practices to prevent XSS, CSRF, injections, auth bypasses, etc.
 
@@ -55,6 +55,7 @@ Welcome, 🤖 AI assistant! Please follow these guidelines when contributing to 
 - Order array keys alphabetically where applicable
 - Use PHPDoc only when necessary (e.g. `@var Collection<ProductInterface>`)
 - Group class elements in this order: constants, properties, constructor, public methods, protected methods, private methods
+- Group getter and setter methods for the same properties together
 - Suffix interfaces with Interface, traits with Trait
 - Use `use` statements for all non-global classes
 - Sort `use` imports alphabetically and group by type (classes, functions, constants)
@@ -72,7 +73,7 @@ Welcome, 🤖 AI assistant! Please follow these guidelines when contributing to 
 ## API
 
 - Define resources in `admin/` and `shop/` folders accordingly
-- Define operations in the following order: `get collection`, `get item`, `post`, `put`, `delete`
+- Define operations in the following order: `get collection`, `get item`, `post`, `put`, `patch`, `delete`
 - Define resource serialization in the `serialization/` folder
 - Use serialization groups for: `index`, `show`, `create`, `update`
 - Use **PHPUnit** tests to validate API configuration and API responses
@@ -84,3 +85,12 @@ Welcome, 🤖 AI assistant! Please follow these guidelines when contributing to 
 ## JavaScript
 
 ## CSS
+
+- Use SCSS (`.scss`) syntax – plain CSS files are not allowed
+- Use Bootstrap 5 utility classes where possible
+- Keep component styles modular – 1 component = 1 partial
+- Use variables from Sylius theme
+- Place all theme variables in `_variables.scss`
+- Avoid `!important` unless absolutely necessary
+- Prefer `rem` over `px` for spacing, font size, etc.
+- Use `mixins/` for reusable logic (e.g., `@include icon-size(24px)`)
