@@ -1,5 +1,30 @@
 # CHANGELOG FOR `2.0.X`
 
+## v2.0.10 (2025-06-17)
+
+#### Details
+
+- [#18128](https://github.com/Sylius/Sylius/pull/18128) [2.0] Swedish translations ([@SzymonFilipek](https://github.com/SzymonFilipek))
+- [#18129](https://github.com/Sylius/Sylius/pull/18129) [2.0] Portuguese translations ([@SzymonFilipek](https://github.com/SzymonFilipek))
+- [#18130](https://github.com/Sylius/Sylius/pull/18130) [2.0] Japanese translations ([@SzymonFilipek](https://github.com/SzymonFilipek))
+- [#18132](https://github.com/Sylius/Sylius/pull/18132) [2.0] Hindi translations ([@SzymonFilipek](https://github.com/SzymonFilipek))
+- [#18131](https://github.com/Sylius/Sylius/pull/18131) [2.0] Korean translations ([@SzymonFilipek](https://github.com/SzymonFilipek))
+- [#18156](https://github.com/Sylius/Sylius/pull/18156) Add initial AGENTS.md ([@mpysiak](https://github.com/mpysiak))
+- [#18158](https://github.com/Sylius/Sylius/pull/18158) Make reference to global agents file for GitHub Copilot ([@Prometee](https://github.com/Prometee))
+- [#18160](https://github.com/Sylius/Sylius/pull/18160) [Admin] Fix back button ([@GSadee](https://github.com/GSadee))
+- [#18163](https://github.com/Sylius/Sylius/pull/18163) Update AGENTS.md ([@mpysiak](https://github.com/mpysiak))
+- [#18162](https://github.com/Sylius/Sylius/pull/18162) Agents.md 2.0 css part ([@PiotrTulacz](https://github.com/PiotrTulacz))
+- [#18151](https://github.com/Sylius/Sylius/pull/18151) [2.0] Austrian German translations ([@SzymonFilipek](https://github.com/SzymonFilipek))
+- [#18150](https://github.com/Sylius/Sylius/pull/18150) [2.0] Swiss German translations ([@SzymonFilipek](https://github.com/SzymonFilipek))
+- [#18143](https://github.com/Sylius/Sylius/pull/18143) [2.0] Czech translations ([@SzymonFilipek](https://github.com/SzymonFilipek))
+- [#18146](https://github.com/Sylius/Sylius/pull/18146) [2.0] Slovakian translations ([@SzymonFilipek](https://github.com/SzymonFilipek))
+- [#18145](https://github.com/Sylius/Sylius/pull/18145) [2.0] Romanian translations ([@SzymonFilipek](https://github.com/SzymonFilipek))
+- [#18144](https://github.com/Sylius/Sylius/pull/18144) [2.0] Italian translations ([@SzymonFilipek](https://github.com/SzymonFilipek))
+- [#18164](https://github.com/Sylius/Sylius/pull/18164) [CS][DX] Refactor
+- [#18169](https://github.com/Sylius/Sylius/pull/18169) [Behat] Fix product setup invalid exception catch ([@NoResponseMate](https://github.com/NoResponseMate))
+- [#18155](https://github.com/Sylius/Sylius/pull/18155) [ProductBundle] Fix ProductAttributeValue mapping to use ProductAttributeInterface ([@michalsemelka](https://github.com/michalsemelka))
+- [#18135](https://github.com/Sylius/Sylius/pull/18135) [Shop][Behat] Use test attribute on the order show page ([@Wojdylak](https://github.com/Wojdylak))
+
 ## v2.0.9 (2025-06-04)
 
 #### Details
