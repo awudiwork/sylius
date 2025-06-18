@@ -129,8 +129,6 @@
   * [How to change a redirect after the add to cart action?](the-customization-guide/customizing-checkout/how-to-change-a-redirect-after-the-add-to-cart-action.md)
 * [Tips & Tricks](the-customization-guide/tips-and-tricks.md)
 
-## 🧑‍🍳 The Cookbook
-
 ***
 
 * [How to resize images?](how-to-resize-images.md)
