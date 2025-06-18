@@ -129,9 +129,12 @@
   * [How to change a redirect after the add to cart action?](the-customization-guide/customizing-checkout/how-to-change-a-redirect-after-the-add-to-cart-action.md)
 * [Tips & Tricks](the-customization-guide/tips-and-tricks.md)
 
+## 🧑‍🍳 THE COOKBOOK
+
+* [How to resize images?](the-cookbook/how-to-resize-images.md)
+
 ***
 
-* [How to resize images?](how-to-resize-images.md)
 * [How to add one image to an entity?](how-to-add-one-image-to-an-entity.md)
 * [How to add multiple images to an entity?](how-to-add-multiple-images-to-an-entity.md)
 * [How to add a custom cart promotion action?](the-cookbook-2.0/how-to-add-a-custom-cart-promotion-action.md)
