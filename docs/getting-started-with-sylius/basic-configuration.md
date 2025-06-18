@@ -77,5 +77,5 @@ After creating this zone, your basic shop configuration will be complete:
 
 * [Channels](../the-book/configuration/channels.md)
 * [Currencies](../the-book/configuration/currencies.md)
-* [Pricing](../the-book/products/pricing.md)
+* [Pricing](../the-book/products/pricing/)
 * [Locales](../the-book/configuration/locales.md)

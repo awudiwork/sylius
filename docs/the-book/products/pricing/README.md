@@ -49,22 +49,5 @@ Exchange Rates ensure that users from different regions can see an approximation
 
 **Example**: If a channel’s base currency is EUR, but a user views the store in USD, the exchange rate set between EUR and USD will be used to calculate and display the approximate price in USD.
 
-<figure><img src="../../.gitbook/assets/sylius-docs-plusfeature-start (1).png" alt=""><figcaption></figcaption></figure>
 
-## B2B Pricing Engine
 
-The Sylius Plus B2B module introduces a powerful and flexible **Pricing Engine** designed to support advanced pricing strategies for business customers. Merchants can define and assign **custom price lists** that reflect negotiated terms or segment-specific offers.
-
-A price list can:
-
-* Apply a uniform **percentage discount** (e.g., 5%) to all products in the catalog.
-* Define **custom prices** for selected product variants.
-
-Additional capabilities include:
-
-* Assigning price lists to specific **Customer Groups** or **Organizations**, ensuring the correct pricing is applied automatically at checkout.
-* Supporting **scalable and precise pricing strategies**, ideal for B2B, wholesale, or contract-driven business models.
-
-This feature helps streamline complex pricing management while remaining fully integrated within the Sylius ecosystem.
-
-<figure><img src="../../.gitbook/assets/sylius-docs-plusfeature-end.png" alt=""><figcaption></figcaption></figure>
