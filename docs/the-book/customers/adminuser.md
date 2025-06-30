@@ -182,12 +182,10 @@ More examples can be found in the `src/Resources/public/*` path.
 You can also use a twig function:
 
 ```
-{% raw %}
 {% if sylius_plus_rbac_has_permission("sylius_admin_order_payment_complete") %}
     {# ... #}
 
 {% endif %}
-{% endraw %}
 ```
 
 **Administrators per Channel**

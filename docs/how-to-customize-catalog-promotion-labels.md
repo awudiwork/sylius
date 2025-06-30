@@ -47,7 +47,6 @@ Once you’ve identified the hook, create a custom Twig template for how the lab
 ```twig
 {# templates/shop/product/show/content/info/summary/catalog_promotions.html.twig #}
 
-{% raw %}
 {% set variant = hookable_metadata.context.variant|default(null) %}
 {% set applied_promotions = hookable_metadata.context.appliedPromotions|default({}) %}
 {% set with_description = hookable_metadata.context.withDescription|default(false) %}
@@ -67,7 +66,6 @@ Once you’ve identified the hook, create a custom Twig template for how the lab
         </div>
     </div>
 {% endif %}
-{% endraw %}
 ```
 
 ### **3. Configure the Twig Hook**
@@ -120,7 +118,6 @@ Due to Sylius using **anonymous Twig components** for product cards, you must ov
 ```twig
 {# templates/components/catalog_promotions.html.twig #}
 
-{% raw %}
 {% if variant is not null %}
     {% set applied_promotions = variant.getChannelPricingForChannel(sylius.channel).getAppliedPromotions() %}
     {% set with_description = true %}
@@ -134,7 +131,6 @@ Due to Sylius using **anonymous Twig components** for product cards, you must ov
         {% endfor %}
     </div>
 {% endif %}
-{% endraw %}
 ```
 
 ### 3. Configure the Hook for the Product Index Page

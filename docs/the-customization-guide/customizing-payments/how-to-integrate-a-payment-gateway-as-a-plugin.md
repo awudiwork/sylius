@@ -81,9 +81,8 @@ From now on, your new Payment Gateway should be available in the admin panel (Ur
    Create a template for each field you need for example `templates/admin/payment_method/form/api_key.html.twig`:
 
 ```twig
-{% raw %}
 {% set form = hookable_metadata.context.form.gatewayConfig.config.api_key %}
-{% endraw %}
+
 
 <div class="col-12 col-md-6">
     {{ form_row(form, sylius_test_form_attribute('config-api-key')) }}

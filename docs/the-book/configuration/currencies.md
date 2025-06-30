@@ -79,9 +79,7 @@ There are some useful helpers for rendering money values in the front end. Simpl
 
 ```
 ..
-{% raw %}
 {% import "@SyliusShop/Common/Macro/money.html.twig" as money %}
-{% endraw %}
 ..
 
 <span class="price">{{ money.format(price, 'EUR') }}</span>

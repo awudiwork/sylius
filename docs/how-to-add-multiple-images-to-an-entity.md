@@ -325,9 +325,7 @@ sylius_twig_hooks:
         </div>
     </div>
     <div class="card-body">
-        {% raw %}
-{% hook 'images' %}
-{% endraw %}
+        {% hook 'images' %}
     </div>
 </div>
 ```
@@ -335,7 +333,6 @@ sylius_twig_hooks:
 ```twig
 {# templates/admin/shipping_method/form/sections/images/content.html.twig #}
 
-{% raw %}
 {% set images = hookable_metadata.context.form.images %}
 
 <div class="row">
@@ -360,7 +357,6 @@ sylius_twig_hooks:
             </div>
         </div>
     {% endfor %}
-{% endraw %}
 </div>
 ```
 

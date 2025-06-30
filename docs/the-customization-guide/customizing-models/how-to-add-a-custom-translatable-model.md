@@ -482,9 +482,7 @@ These templates will override the default rendering and allow the macro to integ
     </div>
     <div class="card-body">
         <div class="row">
-            {% raw %}
-{% hook 'general' %}
-{% endraw %}
+            {% hook 'general' %}
         </div>
     </div>
 </div>
@@ -493,11 +491,9 @@ These templates will override the default rendering and allow the macro to integ
 ```twig
 {# templates/admin/supplier/form/sections/translations.html.twig #}
 
-{% raw %}
 {% import '@SyliusAdmin/shared/helper/translations.html.twig' as translations %}
 {% set form = hookable_metadata.context.form %}
 {% set prefixes = hookable_metadata.prefixes %}
-{% endraw %}
 
 <div class="card mb-3">
     <div class="card-header">
@@ -526,9 +522,7 @@ Create small templates to hook each translatable field.
 ```twig
 {# templates/admin/supplier/form/sections/translations/description.html.twig #}
 
-{% raw %}
 {% set form = hookable_metadata.context.form %}
-{% endraw %}
 
 <div class="col-12 col-md-12">
     {{ form_row(form.description) }}
@@ -538,9 +532,7 @@ Create small templates to hook each translatable field.
 ```twig
 {# templates/admin/supplier/form/sections/translations/name.html.twig #}
 
-{% raw %}
 {% set form = hookable_metadata.context.form %}
-{% endraw %}
 
 <div class="col-12 col-md-12">
     {{ form_row(form.name) }}

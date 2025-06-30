@@ -262,7 +262,6 @@ To add the image field in the `general` section of the Payment Method form using
 1. Create the template at `templates/admin/payment_method/form/sections/general/image.html.twig`:
 
 ```twig
-{% raw %}
 {% set image = hookable_metadata.context.form.image %}
 
 <div class="col-12 col-md-12">
@@ -274,7 +273,6 @@ To add the image field in the `general` section of the Payment Method form using
             {% if image.vars.value.path is defined and image.vars.value.path is not empty %}
                 <img src="{{ image.vars.value.path|imagine_filter('sylius_small') }}" />
             {% endif %}
-{% endraw %}
         </span>
     </div>
     <div class="mb-3">

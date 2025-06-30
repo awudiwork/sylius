@@ -144,6 +144,7 @@
 * [How to customize catalog promotion labels?](how-to-customize-catalog-promotion-labels.md)
 * [How to improve the performance of the catalog promotions?](how-to-improve-the-performance-of-the-catalog-promotions.md)
 * [How to add a custom shipping method rule?](how-to-add-a-custom-shipping-method-rule.md)
+* [How to disable localized URLs?](how-to-disable-localized-urls.md)
 
 ## The Cookbook 2.0
 
@@ -153,7 +154,6 @@
 * [How to add Facebook login?](the-cookbook-2.0/how-to-add-facebook-login.md)
 * [How to render a menu of taxons (categories) in a view?](the-cookbook-2.0/how-to-render-a-menu-of-taxons-categories-in-a-view.md)
 * [How to embed a list of products into a view?](the-cookbook-2.0/how-to-embed-a-list-of-products-into-a-view.md)
-* [How to disable localized URLs?](the-cookbook-2.0/how-to-disable-localized-urls.md)
 * [How to manage content in Sylius?](the-cookbook-2.0/how-to-manage-content-in-sylius.md)
 * [How to use Vue Storefront PWA with Sylius?](the-cookbook-2.0/how-to-use-vue-storefront-pwa-with-sylius.md)
 * [How to configure Stripe Credit Card payment?](the-cookbook-2.0/how-to-configure-stripe-credit-card-payment.md)

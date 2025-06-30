@@ -116,9 +116,7 @@ sylius_twig_hooks:
 ```twig
 <!-- Template content -->
 <div id="container">
-    {% raw %}
-{% hook 'hook_name' %}
-{% endraw %} <!-- It’s still the same name, but it is configured as ‘parent_hook_name.hook_name’.-->
+    {% hook 'hook_name' %} <!-- It’s still the same name, but it is configured as ‘parent_hook_name.hook_name’.-->
 </div>
 <!-- Additional content -->
 ```
@@ -134,9 +132,7 @@ Mechanizm described above can be controlled manually. If you need to set the hoo
 ```twig
 <!-- Template content -->
 <div id="container">
-    {% raw %}
-{% hook 'hook_name' with { _prefixes: ['custom_prefix_not_related_with_a_parent'] } %}
-{% endraw %}
+    {% hook 'hook_name' with { _prefixes: ['custom_prefix_not_related_with_a_parent'] } %}
 </div>
 <!-- Additional content -->
 ```
@@ -343,7 +339,6 @@ To determine the template you need to override:
 Copy the original template to your path and customize it as needed. Example:
 
 ```twig
-{% raw %}
 {% extends '@SyliusShop/layout.html.twig' %}
 {% import '@SyliusUi/Macro/messages.html.twig' as messages %}
 
@@ -367,7 +362,6 @@ Copy the original template to your path and customize it as needed. Example:
     </form>
 </div>
 {% endblock %}
-{% endraw %}
 ```
 
 Clear the cache if changes aren't visible: `php bin/console cache:clear`
