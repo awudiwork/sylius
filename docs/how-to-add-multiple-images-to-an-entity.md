@@ -278,7 +278,7 @@ private Collection $images;
 
 Inspect the shipping method form, let's assume you want to add new new section `Images` that is between the general and configuration.
 
-<figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3) (2).png" alt=""><figcaption></figcaption></figure>
 
 1. Configure hooks for your new images section
 

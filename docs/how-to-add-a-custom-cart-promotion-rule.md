@@ -232,7 +232,7 @@ You can now select the **Premium customer** rule type when creating or editing a
 
 To make this rule applicable, edit a customer and mark them as **premium**.
 
-<figure><img src=".gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (14) (1).png" alt=""><figcaption></figcaption></figure>
 
 Promotions using this rule will now apply (or not) based on whether the customer is marked as premium— regardless of whether a coupon is used:
 
