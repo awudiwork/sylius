@@ -1,7 +1,6 @@
 # CONFLICTS
 
-This document explains why certain conflicts were added to `composer.json` and
-references related issues.
+This document explains why certain conflicts were added to `composer.json` and references related issues.
 
 - `lexik/jwt-authentication-bundle: ^2.18`
 
