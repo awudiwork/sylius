@@ -218,17 +218,17 @@ Learn more about callbacks [here](https://docs.sylius.com/the-customization-guid
 * Create a simple product and reduce one of its variant stock levels to `3`.
 * Ensure that the product is **tracked**, and the stock is managed (i.e., `onHand: 3`, `tracked: true`).
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 
 #### 2. Place an Order
 
 * From the shop, place an order for this product, quantity 3.
 
-<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 * Open the admin panel and complete the payment on the placed order.
 
-<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (3).png" alt=""><figcaption></figcaption></figure>
 
 #### 3. Verify Email Sent
 
@@ -238,7 +238,7 @@ You can use one of these tools to check if the email was sent:
 * **Mailtrap** (cloud): Great for shared environments. See [mailtrap.io](https://mailtrap.io).
 * **Symfony Mailer Profiler**: In `dev` mode, emails appear under the **Mailer** tab in Symfony Profiler.
 
-<figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3) (3).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="success" %}
 Learn more about configuring your mailer and recommended email testing tools in the [Symfony Mailer documentation](https://symfony.com/doc/current/mailer.html).&#x20;

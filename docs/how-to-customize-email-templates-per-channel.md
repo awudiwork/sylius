@@ -18,7 +18,7 @@ Let’s assume you have two channels in your Sylius store: `TOY_STORE` and `FASH
 
 To verify and manage channels in your system, open the **Channels grid** in the Sylius admin panel. You’ll find each channel’s code, name, and hostname.
 
-<figure><img src=".gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (17) (1).png" alt=""><figcaption></figcaption></figure>
 
 These codes are what you will use to differentiate content in your Twig templates.
 

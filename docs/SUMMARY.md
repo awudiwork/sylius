@@ -155,6 +155,7 @@
 * [Index](the-cookbook-2.0/index.md)
 * [Handling multiple Channels in CLI](the-cookbook-2.0/handling-multiple-channels-in-cli.md)
 * [How to edit orders in Sylius?](the-cookbook-2.0/how-to-edit-orders-in-sylius.md)
+* [How to add a custom shipping calculator?](the-cookbook-2.0/how-to-add-a-custom-shipping-calculator.md)
 * [How to add Facebook login?](the-cookbook-2.0/how-to-add-facebook-login.md)
 * [How to render a menu of taxons (categories) in a view?](the-cookbook-2.0/how-to-render-a-menu-of-taxons-categories-in-a-view.md)
 * [How to embed a list of products into a view?](the-cookbook-2.0/how-to-embed-a-list-of-products-into-a-view.md)
