@@ -145,6 +145,7 @@
 * [How to improve the performance of the catalog promotions?](how-to-improve-the-performance-of-the-catalog-promotions.md)
 * [How to add a custom shipping method rule?](how-to-add-a-custom-shipping-method-rule.md)
 * [How to disable localized URLs?](how-to-disable-localized-urls.md)
+* [How to configure mailer?](how-to-configure-mailer.md)
 * [How to send a custom e-mail?](how-to-send-a-custom-e-mail.md)
 
 ## The Cookbook 2.0
@@ -167,7 +168,6 @@
 * [How to add another implementation of UnitRefundInterface?](the-cookbook-2.0/how-to-add-another-implementation-of-unitrefundinterface.md)
 * [How to customize Invoices?](the-cookbook-2.0/how-to-customize-invoices.md)
 * [How to have the Invoice generated after the payment is paid?](the-cookbook-2.0/how-to-have-the-invoice-generated-after-the-payment-is-paid.md)
-* [How to configure mailer?](the-cookbook-2.0/how-to-configure-mailer.md)
 * [How to customize email templates per channel?](the-cookbook-2.0/how-to-customize-email-templates-per-channel.md)
 * [How to disable the order confirmation email?](the-cookbook-2.0/how-to-disable-the-order-confirmation-email.md)
 * [How to create a custom inventory sources filter?](the-cookbook-2.0/how-to-create-a-custom-inventory-sources-filter.md)
