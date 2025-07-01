@@ -40,6 +40,14 @@ sylius_mailer:
 
 With this, the `order_confirmation` email will be ignored by the mailer system, even if triggered.
 
+{% hint style="warning" %}
+&#x20;After making this change, make sure to clear the cache for the configuration to take effect:
+
+```bash
+php bin/console cache:clear
+```
+{% endhint %}
+
 ***
 
 ## 2. Disabling the Listener (Advanced)
