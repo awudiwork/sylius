@@ -91,6 +91,7 @@ This class orchestrates stock checking and email sending.
 namespace App\EmailManager;
 
 use Sylius\Component\Core\Model\OrderInterface;
+use Sylius\Component\Core\Model\ProductVariantInterface;
 use Sylius\Component\Inventory\Checker\AvailabilityCheckerInterface;
 use Sylius\Component\Mailer\Sender\SenderInterface;
 use Sylius\Component\Resource\Repository\RepositoryInterface;
