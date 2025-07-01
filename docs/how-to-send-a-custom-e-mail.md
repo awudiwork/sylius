@@ -24,7 +24,7 @@ This guide shows how to send an email to all administrators **when a product var
 
 ***
 
-## 1: Create the Email Template
+## 1. Create the Email Template
 
 This file defines how your email will look. Sylius expects a `subject` block and a `content` block.
 
@@ -42,7 +42,11 @@ This file defines how your email will look. Sylius expects a `subject` block and
         The variant
         <div style="margin: 10px 0;">
             <span style="border: 1px solid #eee; padding: 10px; color: #1abb9c; font-size: 28px;">
-                {{ variant.name }}
+                {% if variant.name %}
+                  {{ variant.name }}
+                {% else %}
+                  {{ variant.product.name }}
+                {% endif %}
             </span>
         </div>
         is currently out of stock.
@@ -56,7 +60,7 @@ This template will be rendered dynamically with the `variant` variable passed fr
 
 ***
 
-## 2: Register the Email in Mailer Configuration
+## 2. Register the Email in Mailer Configuration
 
 This registers your custom email under the Sylius Mailer system.
 
@@ -79,7 +83,7 @@ Make sure the `template` path is correct and the file exists.
 
 ***
 
-## 3: Create a Custom Email Manager
+## 3. Create a Custom Email Manager
 
 This class orchestrates stock checking and email sending.
 
@@ -140,7 +144,7 @@ readonly final class OutOfStockEmailManager
 
 ***
 
-## 4: Register the Service
+## 4. Register the Service
 
 Add this to your `config/services.yaml`:
 
@@ -157,7 +161,7 @@ services:
 
 ***
 
-## 5: Create a callback for order\_payment
+## 5. Create a callback for order\_payment
 
 ### Create the Event Listener
 
