@@ -2,15 +2,15 @@
 
 This document explains why certain conflicts were added to `composer.json` and references related issues.
 
-- `api-platform/jsonld: ^4.1.1`
+- `api-platform/core:2.7.17`:
 
-  API Platform introduced changes in version 4.1.1 that modify API responses, potentially breaking compatibility with our current implementation.  
-  To ensure stable behavior, we have added this conflict until we can verify and adapt to the changes.
+  This version introduced class aliases, which lead to a fatal error:
+  `The autoloader expected class "ApiPlatform\Core\Bridge\Symfony\Bundle\DependencyInjection\ApiPlatformExtension" to be defined in file ".../vendor/api-platform/core/src/Core/Bridge/Symfony/Bundle/DependencyInjection/ApiPlatformExtension.php". The file was found but the class was not in it, the class name or namespace probably has a typo.`
 
-- `behat/gherkin:^4.13.0`:
+- `lexik/jwt-authentication-bundle: ^2.18`
 
-  This version moved files to flatten paths into a PSR-4 structure, which lead to a fatal error:
-  `PHP Fatal error:  Uncaught Error: Failed opening required '/home/runner/work/Sylius/Sylius/vendor/behat/gherkin/src/../../../i18n.php' (include_path='.:/usr/share/php') in /home/runner/work/Sylius/Sylius/vendor/behat/gherkin/src/Keywords/CachedArrayKeywords.php:34`
+  After bumping to this version ApiBundle starts failing due to requesting a non-existing `api_platform.openapi.factory.legacy` service.
+  As we are not using this service across the ApiBundle we added this conflict to unlock the builds, until we investigate the problem.
 
 - `symfony/serializer:^6.4.23`:
 
