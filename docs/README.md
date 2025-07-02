@@ -94,8 +94,9 @@ Documentation sections referring to Sylius Plus features are:
 * [Customer Pools](the-book/customers/customer-pools.md)
 * [Splitting Shipments](the-book/carts-and-orders/shipments.md)
 * Returns
-  * Returns related [E-Mails](the-book/architecture/e-mails.md#sylius-plus-return-requests-emails)
+  * Returns related emails
 * [Multi-Source Inventory](the-book/products/multi-source-inventory.md)
 * Loyalty
 * Marketplace Suite
 * B2B Suite
+  * [Pricing Engine](the-book/products/pricing/b2b-pricing-engine/)
