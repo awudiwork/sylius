@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Customizing Dynamic Elements
 
 Sylius 2.1 adopts a modern JavaScript architecture based on **Symfony UX** and **StimulusJS**. This setup enables you to build dynamic, interactive frontend behavior while following clean Symfony conventions.

@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Contact
 
 The functionality of contacting the shop support/admin in Sylius is very basic. Each **Channel** of your shop may have a `contactEmail` configured on it. This will be the email address to support.

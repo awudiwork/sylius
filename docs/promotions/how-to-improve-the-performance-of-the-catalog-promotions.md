@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # How to improve the performance of the catalog promotions?
 
 Catalog promotions in Sylius can affect a large number of product variants. By default, Sylius processes them in batches of 100 variants. In performance-critical environments, you might want to adjust this  size for faster or more memory-efficient execution.

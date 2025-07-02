@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # How to resize images?
 
 twSylius uses [LiipImagineBundle](https://symfony.com/doc/current/bundles/LiipImagineBundle/index.html) to handle image manipulation, including resizing and generating thumbnails.

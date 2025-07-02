@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # How to add a custom translatable model?
 
 We can extend the approach described in the [How to Add a Custom Model](https://docs.sylius.com/the-customization-guide/customizing-models/how-to-add-a-custom-model) guide by making our custom model **translatable**. This is particularly useful for any entity whose content may vary based on locale, such as descriptions, instructions, and names.

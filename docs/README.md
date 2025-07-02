@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: false
-  pagination:
-    visible: true
----
-
 # 📖 Sylius Documentation
 
 <figure><img src="https://sylius.com/assets/github-readme.png?3" alt=""><figcaption></figcaption></figure>

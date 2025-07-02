@@ -1,4 +1,4 @@
-# B2B Pricing Engine
+# ➕ B2B Pricing Engine
 
 <figure><img src="../../../../.gitbook/assets/sylius-docs-plusfeature-start (1).png" alt=""><figcaption></figcaption></figure>
 

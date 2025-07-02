@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # How to add a custom cart promotion action?
 
 In real-world shops, it's common to need custom cart promotions that go beyond the default options provided by Sylius. For example, you might want to apply a **100% discount to the cheapest item in the cart**.

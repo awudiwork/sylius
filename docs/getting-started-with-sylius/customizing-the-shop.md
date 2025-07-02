@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Customizing the Shop
 
 Sylius stands out from other eCommerce platforms not only because of its vibrant community and clean codebase but also due to its exceptional developer experience. Its flexibility and ease of customization allow you to adapt the platform to meet your unique business needs.

@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Organization
 
 We aim to shape the future of eCommerce, leveraging the strength of open source and the power of community-driven development. Our team ensures that Sylius as a framework stays up-to-date, innovative, and tailored to the ever-changing needs of modern eCommerce, making it a leading choice for those seeking a customizable and powerful solution.

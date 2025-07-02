@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Pricing
 
 In Sylius, the pricing system handles how product prices are managed across different channels. Each channel can have unique pricing configurations, allowing for flexibility in multi-currency and multi-channel setups.
@@ -48,6 +34,3 @@ For each currency defined in Sylius, you can set up **Exchange Rates**. These ar
 Exchange Rates ensure that users from different regions can see an approximation of the product's price in their local currency, though all pricing calculations remain based on the channel's base currency.
 
 **Example**: If a channel’s base currency is EUR, but a user views the store in USD, the exchange rate set between EUR and USD will be used to calculate and display the approximate price in USD.
-
-
-

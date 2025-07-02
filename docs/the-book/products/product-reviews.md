@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Product Reviews
 
 Product Reviews are a marketing tool that lets your customers give opinions about the products they buy in your shop. They have a `rating` and `comment`.

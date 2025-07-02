@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # How to integrate a Payment Gateway as a Plugin?
 
 A custom payment gateway is a common need in Sylius, given the wide range of payment providers and regional differences. This guide explains how to set up a new payment gateway that sends payment details to an external API.

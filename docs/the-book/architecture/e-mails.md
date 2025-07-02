@@ -1,20 +1,6 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # E-Mails
 
-Sylius is sending various e-mails and this chapter is a reference about all of them. Continue reading to learn what e-mails are sent, when, and how to customize the templates. To understand how e-mail sending works internally, please refer to [SyliusMailerBundle documentation](https://github.com/Sylius/SyliusMailerBundle/blob/master/docs/index.md). To learn more about mailer services configuration, read the dedicated [cookbook](../../how-to-customize-email-templates-per-channel.md).
+Sylius is sending various e-mails and this chapter is a reference about all of them. Continue reading to learn what e-mails are sent, when, and how to customize the templates. To understand how e-mail sending works internally, please refer to [SyliusMailerBundle documentation](https://github.com/Sylius/SyliusMailerBundle/blob/master/docs/index.md). To learn more about mailer services configuration, read the dedicated [cookbook](../../emails/how-to-customize-email-templates-per-channel.md).
 
 ### User Confirmation
 

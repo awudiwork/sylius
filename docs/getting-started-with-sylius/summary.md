@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Summary
 
 We hope you’ve enjoyed your first steps with Sylius! Now that you’ve gained some foundational knowledge, the possibilities are endless for how you can use Sylius, customize it, and add new features with both your code and contributions from the community.

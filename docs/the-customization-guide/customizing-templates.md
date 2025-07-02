@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Customizing Templates
 
 Sylius offers two primary template types: Shop and Admin. Furthermore, it allows you to create custom templates tailored to your specific needs, providing flexibility for unique requirements.

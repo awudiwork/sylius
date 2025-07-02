@@ -60,7 +60,7 @@
   * [Product Associations](the-book/products/product-associations.md)
   * [Attributes](the-book/products/attributes.md)
   * [Pricing](the-book/products/pricing/README.md)
-    * [B2B Pricing Engine](the-book/products/pricing/b2b-pricing-engine/README.md)
+    * [➕ B2B Pricing Engine](the-book/products/pricing/b2b-pricing-engine/README.md)
       * [User Guide: Percentage Discount Pricing List](the-book/products/pricing/b2b-pricing-engine/user-guide-percentage-discount-pricing-list.md)
       * [User Guide: Fixed Discount Pricing List](the-book/products/pricing/b2b-pricing-engine/user-guide-fixed-discount-pricing-list.md)
       * [User Guide: Fixed Discount Pricing List with tier pricing](the-book/products/pricing/b2b-pricing-engine/user-guide-fixed-discount-pricing-list-with-tier-pricing.md)
@@ -99,7 +99,7 @@
   * [Contributing Translations](the-book/contributing/contributing-translations.md)
   * [Key Contributors](the-book/contributing/key-contributors.md)
 
-## The Customization Guide
+## 🛠️ The Customization Guide
 
 * [Index](the-customization-guide/index.md)
 * [Customizing Models](the-customization-guide/customizing-models/README.md)
@@ -134,24 +134,29 @@
 
 ## 🧑‍🍳 THE COOKBOOK
 
-* [How to resize images?](the-cookbook/how-to-resize-images.md)
+* [Media](the-cookbook/media/README.md)
+  * [How to resize images?](the-cookbook/media/how-to-resize-images.md)
+  * [How to add one image to an entity?](the-cookbook/media/how-to-add-one-image-to-an-entity.md)
+  * [How to add multiple images to an entity?](the-cookbook/media/how-to-add-multiple-images-to-an-entity.md)
 
 ***
 
-* [How to add one image to an entity?](how-to-add-one-image-to-an-entity.md)
-* [How to add multiple images to an entity?](how-to-add-multiple-images-to-an-entity.md)
-* [How to add a custom cart promotion action?](the-cookbook-2.0/how-to-add-a-custom-cart-promotion-action.md)
-* [How to add a custom cart promotion rule?](how-to-add-a-custom-cart-promotion-rule.md)
-* [How to add a custom catalog promotion action?](how-to-add-a-custom-catalog-promotion-action.md)
-* [How to add a custom catalog promotion scope?](how-to-add-a-custom-catalog-promotion-scope.md)
-* [How to customize catalog promotion labels?](how-to-customize-catalog-promotion-labels.md)
-* [How to improve the performance of the catalog promotions?](how-to-improve-the-performance-of-the-catalog-promotions.md)
-* [How to add a custom shipping method rule?](how-to-add-a-custom-shipping-method-rule.md)
-* [How to disable localized URLs?](how-to-disable-localized-urls.md)
-* [How to configure mailer?](how-to-configure-mailer.md)
-* [How to disable the order confirmation email?](how-to-disable-the-order-confirmation-email.md)
-* [How to send a custom e-mail?](how-to-send-a-custom-e-mail.md)
-* [How to customize email templates per channel?](how-to-customize-email-templates-per-channel.md)
+* [Promotions](promotions/README.md)
+  * [How to add a custom cart promotion action?](promotions/how-to-add-a-custom-cart-promotion-action.md)
+  * [How to add a custom cart promotion rule?](promotions/how-to-add-a-custom-cart-promotion-rule.md)
+  * [How to add a custom catalog promotion action?](promotions/how-to-add-a-custom-catalog-promotion-action.md)
+  * [How to add a custom catalog promotion scope?](promotions/how-to-add-a-custom-catalog-promotion-scope.md)
+  * [How to customize catalog promotion labels?](promotions/how-to-customize-catalog-promotion-labels.md)
+  * [How to improve the performance of the catalog promotions?](promotions/how-to-improve-the-performance-of-the-catalog-promotions.md)
+* [Emails](emails/README.md)
+  * [How to configure mailer?](emails/how-to-configure-mailer.md)
+  * [How to disable the order confirmation email?](emails/how-to-disable-the-order-confirmation-email.md)
+  * [How to send a custom e-mail?](emails/how-to-send-a-custom-e-mail.md)
+  * [How to customize email templates per channel?](emails/how-to-customize-email-templates-per-channel.md)
+* [Shipping](shipping/README.md)
+  * [How to add a custom shipping method rule?](shipping/how-to-add-a-custom-shipping-method-rule.md)
+* [Shop](shop/README.md)
+  * [How to disable localized URLs?](shop/how-to-disable-localized-urls.md)
 
 ## The Cookbook 2.0
 

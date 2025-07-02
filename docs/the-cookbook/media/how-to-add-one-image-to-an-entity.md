@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # How to add one image to an entity?
 
 This guide demonstrates how to add a **one-to-one image association** to an entity in **Sylius 2.x**. We'll use the `PaymentMethod` entity as an example, but the same approach applies to any other entity.
@@ -255,7 +241,7 @@ services:
 
 Inspect the payment method form, let's assume you want to add new field to `general` section.
 
-<figure><img src=".gitbook/assets/image (33).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (33).png" alt=""><figcaption></figcaption></figure>
 
 To add the image field in the `general` section of the Payment Method form using Twig hooks:
 
@@ -340,6 +326,6 @@ php bin/console doctrine:migrations:migrate
 
 ### Step 11: Result
 
-<figure><img src=".gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
 
 The Payment method has now image field :tada:!

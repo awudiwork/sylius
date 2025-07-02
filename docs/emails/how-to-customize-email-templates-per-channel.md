@@ -1,24 +1,10 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # How to customize email templates per channel?
 
 Let’s assume you have two channels in your Sylius store: `TOY_STORE` and `FASHION_WEB`. You want to personalize email content depending on which channel the customer used to place an order. This guide shows how to achieve this in a maintainable and scalable way.
 
 To verify and manage channels in your system, open the **Channels grid** in the Sylius admin panel. You’ll find each channel’s code, name, and hostname.
 
-<figure><img src=".gitbook/assets/image (17) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (17) (1).png" alt=""><figcaption></figcaption></figure>
 
 These codes are what you will use to differentiate content in your Twig templates.
 
@@ -189,6 +175,6 @@ Each email adapts to the right channel automatically. Developers can manage temp
 
 You’ve now implemented clean, scalable multi-channel email templates in Sylius!
 
-<figure><img src=".gitbook/assets/image (18).png" alt=""><figcaption><p>FASHION_WEB channel</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (18).png" alt=""><figcaption><p>FASHION_WEB channel</p></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (19).png" alt=""><figcaption><p>TOY_STORE channel</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (19).png" alt=""><figcaption><p>TOY_STORE channel</p></figcaption></figure>

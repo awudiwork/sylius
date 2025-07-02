@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # How to add a custom catalog promotion scope?
 
 Catalog promotions in Sylius allow you to apply discounts automatically to selected product variants based on defined **scopes**. In this guide, we'll walk you through adding a custom scope that filters variants by checking if their name contains a specific phrase.
@@ -152,9 +138,9 @@ sylius:
 
 ### ✅ Result
 
-<figure><img src=".gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (42).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (42).png" alt=""><figcaption></figcaption></figure>
 
 You can now select **"By phrase"** as a scope type when creating or editing catalog promotions. All product variants whose names contain the given phrase will be eligible for the promotion.
 

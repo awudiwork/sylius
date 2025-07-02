@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # How to disable the order confirmation email?
 
 In some projects, you may want to **completely disable the order confirmation email** sent when an order is completed. This guide explains two clean and recommended ways to do that:

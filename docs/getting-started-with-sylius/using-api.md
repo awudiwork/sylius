@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Using API
 
 Log inSince Sylius 1.8, we have offered a new API based on ApiPlatform. Below are examples of how to use the API for basic shop operations. **Public API documentation is available** [**here**](https://v2.demo.sylius.com/api/v2/docs)**.**

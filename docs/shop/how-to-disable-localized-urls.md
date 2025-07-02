@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # How to disable localized URLs?
 
 By default, Sylius uses localised URLs, meaning that they contain the `/locale` prefix to specify the current locale. For example, when the "English (United States)" locale is selected in the channel, the homepage URL might look like this: `{hostname}/en_US/`.
@@ -100,9 +86,9 @@ This update ensures the shop routes are matched correctly without the locale pre
 
 ## ✅ Final Result
 
-| Before (Localized URL)                                                                                 | After (Clean URL)                                                                                      |
-| ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------ |
-| <div><figure><img src=".gitbook/assets/image (67).png" alt=""><figcaption></figcaption></figure></div> | <div><figure><img src=".gitbook/assets/image (66).png" alt=""><figcaption></figcaption></figure></div> |
+| Before (Localized URL)                                                                                    | After (Clean URL)                                                                                         |
+| --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| <div><figure><img src="../.gitbook/assets/image (67).png" alt=""><figcaption></figcaption></figure></div> | <div><figure><img src="../.gitbook/assets/image (66).png" alt=""><figcaption></figcaption></figure></div> |
 
 By completing these steps:
 

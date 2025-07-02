@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Release Cycle
 
 This document explains the **release cycle** of the Sylius project (i.e., the code & documentation hosted on the main `Sylius/Sylius` [repository](https://github.com/Sylius/Sylius)).

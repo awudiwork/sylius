@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # How to configure mailer?
 
 Sylius uses [`SyliusMailerBundle`](https://github.com/Sylius/SyliusMailerBundle/blob/v2.1.0/docs/index.md), which is based on the **Symfony Mailer** to provide a powerful and customizable email system. This allows you to configure easily:

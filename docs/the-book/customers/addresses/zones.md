@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Zones
 
 **Zones** are a part of the [Addressing](https://docs.sylius.com/en/1.13/book/customers/addresses/addresses.html) concept.

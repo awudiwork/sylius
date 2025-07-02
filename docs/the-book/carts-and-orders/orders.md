@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Orders
 
 The **Order** model in Sylius is a key component where many eCommerce concepts converge. An order can represent either an active shopping cart or a placed order.

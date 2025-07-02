@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Contributing Translations
 
 Sylius supports multiple languages, and we rely on the community to help maintain and improve translations. Even small contributions, like fixing a typo or translating a new string, can make a big impact for users around the world.

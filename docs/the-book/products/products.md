@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Products
 
 The **Product** model in Sylius represents unique items in your store. Every product can have different **variants** (e.g., size, color) and **attributes** (e.g., material, brand). Each product must have at least one variant to be sold in the store.

@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Customizing Menus
 
 Sylius provides various menus across its Shop and Admin interfaces — from customer account navigation to product form tabs and button groups. In Sylius 2.0, menu customization is handled in two main ways:

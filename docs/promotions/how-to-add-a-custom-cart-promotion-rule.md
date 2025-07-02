@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # How to add a custom cart promotion rule?
 
 Adding custom promotion rules is a common need in real-world shops. For example, you might want to offer exclusive discounts to _premium customers_. To implement this, you'll create a new `PromotionRule` that checks whether a customer qualifies.
@@ -141,7 +127,7 @@ services:
 
 Inspect the admin customer form to find the appropriate hook. The relevant section is `sylius_admin.customer.update.content.form.sections.general`.
 
-<figure><img src=".gitbook/assets/image (36).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (36).png" alt=""><figcaption></figcaption></figure>
 
 Create a new Twig template for this field:
 
@@ -228,15 +214,15 @@ services:
 
 You can now select the **Premium customer** rule type when creating or editing a cart promotion in the Sylius Admin panel.
 
-<figure><img src=".gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
 
 To make this rule applicable, edit a customer and mark them as **premium**.
 
-<figure><img src=".gitbook/assets/image (14) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (14) (1).png" alt=""><figcaption></figcaption></figure>
 
 Promotions using this rule will now apply (or not) based on whether the customer is marked as premium— regardless of whether a coupon is used:
 
-<figure><img src=".gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

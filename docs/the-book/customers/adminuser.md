@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # AdminUser
 
 The **AdminUser** entity extends the **User** entity. It is created to enable administrator accounts that have access to the administration panel.

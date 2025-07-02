@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Attributes
 
 Attributes in Sylius allow you to define shared traits among entities. For example, products within the same category may share common attributes, such as a book's **number of pages**, the **brand** of a T-shirt, or any other relevant detail.

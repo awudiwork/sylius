@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Customizing Styles
 
 In Sylius 2.x, customizing the visual appearance of the admin and shop interfaces is cleanly handled through CSS variables defined by the frontend frameworks used by each section:

@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Sylius CE Installation
 
 ### Setting up a fresh Sylius project
@@ -137,7 +123,7 @@ MAILER_URL=gmail://username:password@local
 {% hint style="info" %}
 Email delivery is disabled for _test_, _dev_ and _staging_ environments by default. The _prod_ environment has delivery turned on.
 
-You can learn more about configuring mailer service in [How to configure mailer?](../../../how-to-configure-mailer.md)
+You can learn more about configuring mailer service in [How to configure mailer?](../../../emails/how-to-configure-mailer.md)
 {% endhint %}
 
 ### Accessing the Shop

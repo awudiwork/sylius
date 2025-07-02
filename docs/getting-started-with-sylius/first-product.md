@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # First Product
 
 Products Management is one of the most important sections of the Sylius Admin panel. The **Catalog** section in the menu offers a wide range of options, but for now, we’ll focus on **product creation**.

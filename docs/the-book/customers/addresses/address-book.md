@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Address Book
 
 The Address Book concept is a very convenient solution for the customers of your shop, that come back. Once they provide an address it is saved in the system and can be reused the next time.

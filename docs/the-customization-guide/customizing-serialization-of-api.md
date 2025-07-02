@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Customizing Serialization of API
 
 To customize which fields appear in Sylius API responses, follow these steps for adding, removing, or renaming fields.

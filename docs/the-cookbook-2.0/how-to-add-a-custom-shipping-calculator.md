@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # How to add a custom shipping calculator?
 
 Sylius comes with several built-in shipping fee calculators like **flat rate** or **per unit**, but in real-world projects, you often need more domain-specific logic.
