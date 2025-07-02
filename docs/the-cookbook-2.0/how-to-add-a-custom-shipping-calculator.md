@@ -175,9 +175,10 @@ final class WeightRateConfigurationType extends AbstractType
 ```yaml
 # config/services.yaml
 
-sylius.form.type.shipping.calculator.channel_based_weight_based_rate_configuration:
-    class: App\Form\Type\Shipping\Calculator\ChannelBasedWeightRateConfigurationType
-    tags: ['form.type']
+services:
+    sylius.form.type.shipping.calculator.channel_based_weight_based_rate_configuration:
+        class: App\Form\Type\Shipping\Calculator\ChannelBasedWeightRateConfigurationType
+        tags: ['form.type']
 ```
 
 ***
