@@ -24,11 +24,9 @@ These codes are what you will use to differentiate content in your Twig template
 
 ***
 
-## 2. Identify the Email Template to Override
+## 1. Identify the Email Template to Override
 
-You can find a full list of templates and context variables in the emails documentation.
-
-Original template path:
+Original template:
 
 ```markup
 @SyliusCoreBundle/Email/orderConfirmation.html.twig
@@ -40,15 +38,23 @@ To override it, copy it to:
 templates/bundles/SyliusCoreBundle/Email/orderConfirmation.html.twig
 ```
 
+{% hint style="success" %}
+You can find a full list of email templates in the [AdminBundle](https://github.com/Sylius/Sylius/tree/v2.1.2/src/Sylius/Bundle/AdminBundle/templates/email), [ShopBundle](https://github.com/Sylius/Sylius/tree/v2.1.2/src/Sylius/Bundle/ShopBundle/templates/email) and [CoreBundle](https://github.com/Sylius/Sylius/tree/2.1/src/Sylius/Bundle/CoreBundle/Resources/views/Email).
+{% endhint %}
+
 {% hint style="info" %}
 Twig paths like `@SyliusCoreBundle/...` point to the original bundle templates. To override them, create files under `templates/bundles/...`, following Symfony’s bundle override system.
 {% endhint %}
 
 ***
 
-## 3. Use `if` Statements for Simple Channel Variations
+## 2. Choose a Strategy
 
-For minor differences between channels, use `if` conditions in the Twig template:
+Depending on the **number of channels** and **degree of customization**, choose one of two strategies:
+
+### **For 1–2 Channels with Small Differences**
+
+Use inline `if` conditions:
 
 ```twig
 {# templates/bundles/SyliusCoreBundle/Email/orderConfirmation.html.twig #}
@@ -76,13 +82,11 @@ For minor differences between channels, use `if` conditions in the Twig template
 Best for 2–3 channels that have cosmetic differences.
 {% endhint %}
 
-***
+### **For 3+ Channels or Maintainability**
 
-## 4. Extract Channel-Specific Templates for Maintainability (Recommended)
+Use per-channel Twig includes with fallback:
 
-Instead of using many `if` statements, extract logic into per-channel files:
-
-### Parent Template:
+#### Parent Template:
 
 ```twig
 {# templates/bundles/SyliusCoreBundle/Email/orderConfirmation.html.twig #}
@@ -101,7 +105,7 @@ Instead of using many `if` statements, extract logic into per-channel files:
 {% endblock %}
 ```
 
-### Example File Structure
+#### Example File Structure
 
 ```
 templates/
@@ -116,7 +120,7 @@ templates/
         └── _default.html.twig
 ```
 
-### Sample Channel Files
+#### Sample Channel Files
 
 `_default.html.twig`
 
@@ -152,7 +156,7 @@ This structure allows you to extend or localize emails without changing the pare
 
 ***
 
-## 5. Understand the Default Layout
+## 3. Understand the Default Layout
 
 By default, the core Sylius `orderConfirmation.html.twig` email looks like this:
 
@@ -174,19 +178,8 @@ By default, the core Sylius `orderConfirmation.html.twig` email looks like this:
 * `_content.html.twig`: includes layout, order number, and optional link
 
 {% hint style="success" %}
-### You can override any of these includes or the layout itself per channel as needed.
-
-Check out available email templates [here](https://github.com/Sylius/Sylius/tree/v2.1.2/src/Sylius/Bundle/ShopBundle/templates/email) and [here](https://github.com/Sylius/Sylius/tree/2.1/src/Sylius/Bundle/CoreBundle/Resources/views/Email)
+You can override any of these includes or the layout itself per channel as needed.
 {% endhint %}
-
-***
-
-### 6. Summary: Strategy by Complexity
-
-| Scenario                        | Strategy                                |
-| ------------------------------- | --------------------------------------- |
-| 1–2 channels, small changes     | Use `{% if %}` blocks in one template   |
-| 3+ channels, or different voice | Use `include` with fallback per channel |
 
 ***
 
