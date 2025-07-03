@@ -7,7 +7,7 @@ We hope you’ve enjoyed your first steps with Sylius! Now that you’ve gained 
 * **Want to dive deeper into Sylius features?**\
   Check out [The Book](../the-book/introduction-to-sylius.md), where you'll find comprehensive information on everything Sylius has to offer.
 * **Interested in making more customizations?**\
-  Explore [The Customization Guide](../the-customization-guide/index.md) for insights on how to tailor Sylius to your unique needs.
+  Explore [The Customization Guide](broken-reference) for insights on how to tailor Sylius to your unique needs.
 * **Have cool features to share with the community?**\
   Head over to the [Sylius Plugins](broken-reference) chapter to learn how to contribute your work.
 

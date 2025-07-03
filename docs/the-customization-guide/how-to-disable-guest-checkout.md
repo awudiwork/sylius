@@ -1,12 +1,12 @@
-# How to disable guest checkout?
+# Customizing Checkout
+
+## How to disable guest checkout?
 
 In some projects, you may want to **require customers to log in or register before proceeding to checkout**.
 
 This guide explains how to disable guest checkout in both the **Shop UI** and the **API** in **Sylius 2.0**.
 
-***
-
-## Disabling Guest Checkout (Shop UI)
+### Disabling Guest Checkout (Shop UI)
 
 To prevent guests from accessing the checkout process via the standard web interface:
 
@@ -30,11 +30,11 @@ security:
 
 If a guest user tries to start the checkout process, they will be **redirected to the login or registration page**. After successful authentication, they are automatically taken back to the checkout addressing step.
 
-<figure><img src="../../.gitbook/assets/image (68).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (68).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
-## Disabling Guest Checkout (Shop API)
+### Disabling Guest Checkout (Shop API)
 
 By default, Sylius 2.0's **API** allows anonymous users to complete checkout. To restrict this and **require login for checkout-related API routes**, follow the steps below.
 

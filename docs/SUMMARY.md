@@ -101,7 +101,6 @@
 
 ## 🛠️ The Customization Guide
 
-* [Index](the-customization-guide/index.md)
 * [Customizing Models](the-customization-guide/customizing-models/README.md)
   * [How to add a custom model?](the-customization-guide/customizing-models/how-to-add-a-custom-model.md)
   * [How to add a custom translatable model?](the-customization-guide/customizing-models/how-to-add-a-custom-translatable-model.md)
@@ -127,9 +126,7 @@
 * [Customizing Payments](the-customization-guide/customizing-payments/README.md)
   * [How to integrate a Payment Gateway as a Plugin?](the-customization-guide/customizing-payments/how-to-integrate-a-payment-gateway-as-a-plugin.md)
   * [How to configure PayPal Express Checkout?](the-customization-guide/customizing-payments/how-to-configure-paypal-express-checkout.md)
-* [Customizing Checkout](the-customization-guide/customizing-checkout/README.md)
-  * [How to disable guest checkout?](the-customization-guide/customizing-checkout/how-to-disable-guest-checkout.md)
-  * [How to change a redirect after the add to cart action?](the-customization-guide/customizing-checkout/how-to-change-a-redirect-after-the-add-to-cart-action.md)
+* [Customizing Checkout](the-customization-guide/how-to-disable-guest-checkout.md)
 * [Tips & Tricks](the-customization-guide/tips-and-tricks.md)
 
 ## 🧑‍🍳 THE COOKBOOK
