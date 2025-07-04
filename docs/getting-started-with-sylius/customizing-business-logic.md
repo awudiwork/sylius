@@ -89,7 +89,7 @@ Now that your calculator is registered, you can create a new **Shipping Method**
 
  
 
-<figure><img src="../.gitbook/assets/shipping-cost-1.png" alt=""><figcaption><p>Shipping cost for 1 pacel</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/shipping-cost-1.png" alt=""><figcaption><p>Shipping cost for 1 parcel</p></figcaption></figure>
 
  
 
