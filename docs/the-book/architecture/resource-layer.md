@@ -173,4 +173,4 @@ app_product_create:
                 parameters: [$store]
 ```
 
-All other methods have the same level of flexibility and are documented in the [Resource Bundle documentation](https://stack.sylius.com/resource/index).
+All other methods have the same level of flexibility and are documented in the [Resource Bundle documentation](https://docs.sylius.com/sylius-stack/resource/index).
