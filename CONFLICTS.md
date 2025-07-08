@@ -1,7 +1,6 @@
 # CONFLICTS
 
-This document explains why certain conflicts were added to `composer.json` and
-references related issues.
+This document explains why certain conflicts were added to `composer.json` and references related issues.
 
 - `api-platform/jsonld: ^4.1.1`
 
