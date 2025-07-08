@@ -135,6 +135,7 @@
   * [How to resize images?](the-cookbook/media/how-to-resize-images.md)
   * [How to add one image to an entity?](the-cookbook/media/how-to-add-one-image-to-an-entity.md)
   * [How to add multiple images to an entity?](the-cookbook/media/how-to-add-multiple-images-to-an-entity.md)
+  * [How to automatically store images on AWS-S3?](the-cookbook/media/how-to-automatically-store-images-on-aws-s3.md)
 
 ***
 
@@ -158,54 +159,8 @@
 
 ## The Cookbook 2.0
 
-* [Index](the-cookbook-2.0/index.md)
-* [Handling multiple Channels in CLI](the-cookbook-2.0/handling-multiple-channels-in-cli.md)
-* [How to edit orders in Sylius?](the-cookbook-2.0/how-to-edit-orders-in-sylius.md)
-* [How to add Facebook login?](the-cookbook-2.0/how-to-add-facebook-login.md)
-* [How to render a menu of taxons (categories) in a view?](the-cookbook-2.0/how-to-render-a-menu-of-taxons-categories-in-a-view.md)
-* [How to embed a list of products into a view?](the-cookbook-2.0/how-to-embed-a-list-of-products-into-a-view.md)
-* [How to manage content in Sylius?](the-cookbook-2.0/how-to-manage-content-in-sylius.md)
-* [How to use Vue Storefront PWA with Sylius?](the-cookbook-2.0/how-to-use-vue-storefront-pwa-with-sylius.md)
-* [How to configure Stripe Credit Card payment?](the-cookbook-2.0/how-to-configure-stripe-credit-card-payment.md)
-* [How to encrypt gateway config stored in the database?](the-cookbook-2.0/how-to-encrypt-gateway-config-stored-in-the-database.md)
-* [How to authorize a payment before capturing?](the-cookbook-2.0/how-to-authorize-a-payment-before-capturing.md)
-* [How to customize a Credit Memo?](the-cookbook-2.0/how-to-customize-a-credit-memo.md)
-* [How to have the Credit Memos created after the Refund Payments?](the-cookbook-2.0/how-to-have-the-credit-memos-created-after-the-refund-payments.md)
-* [How to customize the refund form?](the-cookbook-2.0/how-to-customize-the-refund-form.md)
-* [How to add another type of refund?](the-cookbook-2.0/how-to-add-another-type-of-refund.md)
-* [How to add another implementation of UnitRefundInterface?](the-cookbook-2.0/how-to-add-another-implementation-of-unitrefundinterface.md)
-* [How to customize Invoices?](the-cookbook-2.0/how-to-customize-invoices.md)
-* [How to have the Invoice generated after the payment is paid?](the-cookbook-2.0/how-to-have-the-invoice-generated-after-the-payment-is-paid.md)
-* [How to create a custom inventory sources filter?](the-cookbook-2.0/how-to-create-a-custom-inventory-sources-filter.md)
-* [How to automatically store images on AWS-S3?](the-cookbook-2.0/how-to-automatically-store-images-on-aws-s3.md)
-* [Introduction to Sylius Cloud by Platform.sh](the-cookbook-2.0/introduction-to-sylius-cloud-by-platform.sh.md)
-* [Advanced Sylius Cloud by Platform.sh configuration](the-cookbook-2.0/advanced-sylius-cloud-by-platform.sh-configuration.md)
-* [Sylius Cloud by Platform.sh management basics](the-cookbook-2.0/sylius-cloud-by-platform.sh-management-basics.md)
-* [How to prepare simple CRON jobs?](the-cookbook-2.0/how-to-prepare-simple-cron-jobs.md)
-* [How to use installer commands?](the-cookbook-2.0/how-to-use-installer-commands.md)
-* [How to disable the default shop, admin or API of Sylius?](the-cookbook-2.0/how-to-disable-the-default-shop-admin-or-api-of-sylius.md)
-* [How to disable admin version notifications?](the-cookbook-2.0/how-to-disable-admin-version-notifications.md)
-* [How to customize Admin routes prefix?](the-cookbook-2.0/how-to-customize-admin-routes-prefix.md)
-* [How to add Google Analytics script to shop?](the-cookbook-2.0/how-to-add-google-analytics-script-to-shop.md)
-* [How to migrate from Gulp to Webpack (Sylius 1.11 or earlier)?](the-cookbook-2.0/how-to-migrate-from-gulp-to-webpack-sylius-1.11-or-earlier.md)
-* [How to migrate from Gulp to Webpack (Sylius 1.12 or later)?](the-cookbook-2.0/how-to-migrate-from-gulp-to-webpack-sylius-1.12-or-later.md)
-* [How to stay with Gulp after Sylius 1.12 update?](the-cookbook-2.0/how-to-stay-with-gulp-after-sylius-1.12-update.md)
-* [How to configure tax rates to be based on shipping address?](the-cookbook-2.0/how-to-configure-tax-rates-to-be-based-on-shipping-address.md)
-* [How to add product variants by options to the cart in Sylius API?](the-cookbook-2.0/how-to-add-product-variants-by-options-to-the-cart-in-sylius-api.md)
-* [How to force already registered user to log in during checkout in Sylius API?](the-cookbook-2.0/how-to-force-already-registered-user-to-log-in-during-checkout-in-sylius-api.md)
-* [How to add a new Loyalty Rule Configuration to API?](the-cookbook-2.0/how-to-add-a-new-loyalty-rule-configuration-to-api.md)
-
-## Tests
-
-* [Behaviour Driven Development](tests/behaviour-driven-development/README.md)
-  * [How to add a new context?](tests/behaviour-driven-development/how-to-add-a-new-context.md)
-  * [How to add a new page object?](tests/behaviour-driven-development/how-to-add-a-new-page-object.md)
-  * [How to use transformers?](tests/behaviour-driven-development/how-to-use-transformers.md)
-  * [How to define a new suite?](tests/behaviour-driven-development/how-to-define-a-new-suite.md)
-
 ## The Performance Guide
 
-* [Index](the-performance-guide/index.md)
 * [Database indexes](the-performance-guide/database-indexes.md)
 * [Query optimization](the-performance-guide/query-optimization.md)
 
