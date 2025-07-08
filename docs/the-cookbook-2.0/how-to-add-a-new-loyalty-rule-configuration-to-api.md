@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # How to add a new Loyalty Rule Configuration to API?
 
 After creating a new loyalty rule configuration you need to add a new `LoyaltyRuleActionDataTransformer` that implements `Sylius\Plus\Loyalty\Infrastructure\DataTransformer\LoyaltyRuleActionDataTransformerInterface`.&#x20;

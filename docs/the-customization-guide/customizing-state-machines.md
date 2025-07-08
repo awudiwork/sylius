@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Customizing State Machines
 
 Sylius uses Symfony's Workflow Component to manage business processes such as order checkout and payment flows. These workflows (also called state machines) define the states an entity can be in and how transitions between these states happen.

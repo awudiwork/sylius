@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # AdminUser
 
 The **AdminUser** entity extends the **User** entity. It is created to enable administrator accounts that have access to the administration panel.
@@ -182,12 +168,10 @@ More examples can be found in the `src/Resources/public/*` path.
 You can also use a twig function:
 
 ```
-{% raw %}
 {% if sylius_plus_rbac_has_permission("sylius_admin_order_payment_complete") %}
     {# ... #}
 
 {% endif %}
-{% endraw %}
 ```
 
 **Administrators per Channel**

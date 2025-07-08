@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Customizing Models
 
 In Sylius, all models are located in the `Sylius\Component\*ComponentName*\Model` namespaces with corresponding interfaces. Many models are also extended within the Core component. If you want to customize a model that exists in Core, make sure to extend the Core version rather than the base model from the component itself.

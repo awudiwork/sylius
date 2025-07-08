@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Shipments
 
 A shipment represents a shipping request for an order in Sylius. Each order can have multiple shipments, and each shipment is made up of `ShipmentUnits`, which correspond to `OrderItemUnits` from the order.

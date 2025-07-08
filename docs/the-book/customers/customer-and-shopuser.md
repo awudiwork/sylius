@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Customer & ShopUser
 
 For handling customers of your system **Sylius** is using a combination of two entities - **Customer** and **ShopUser**. The difference between these two entities is simple: the **Customer** is a guest in your shop and the **ShopUser** is a user registered in the system - they have an account.

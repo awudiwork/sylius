@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Submitting a Patch
 
 Patches are the best way to submit bug fixes or propose enhancements to Sylius. Here’s a step-by-step guide.

@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Introduction to Sylius
 
 Sylius is a game-changing e-commerce solution for PHP, based on the Symfony framework.
@@ -30,7 +16,7 @@ What are our core values and what makes us different from other solutions?
 
 And much more, but we will let you discover it yourself.
 
-[![../../\_images/ce\_plus\_banner.png](https://old-docs.sylius.com/en/1.13/\_images/ce\_plus\_banner.png)](https://sylius.com/plus/?utm\_source=docs\&utm\_medium=cta\&utm\_campaign=plus)
+[![../../\_images/ce\_plus\_banner.png](https://old-docs.sylius.com/en/1.13/_images/ce_plus_banner.png)](https://sylius.com/plus/?utm_source=docs\&utm_medium=cta\&utm_campaign=plus)
 
 ## Sylius Community Edition (CE)
 

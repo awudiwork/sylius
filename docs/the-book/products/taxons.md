@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Taxons
 
 In Sylius, **Taxons** work similarly to categories in other eCommerce systems. They allow you to organize and categorize your products in a highly flexible way, which is essential for modern eCommerce. The Taxon system is hierarchical, meaning you can create parent categories with nested subcategories.

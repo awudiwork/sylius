@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Coupons
 
 Coupons are tightly integrated with Sylius Cart Promotions, allowing promotions to be activated by unique codes. Here’s how to create, apply, and generate coupons for promotions.

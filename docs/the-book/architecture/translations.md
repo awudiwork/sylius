@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Translations
 
 Sylius uses the approach of personal translations - where each entity is bound with a translation entity, that has its table (instead of keeping all translations in one table for the whole system). This results in the `ProductTranslation` class and `sylius_product_translation` table for the `Product` entity.

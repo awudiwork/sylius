@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Basic Configuration
 
 The Configuration section is the first place you should check out in the Admin panel. There you can find a bunch of modules used to customize your shop the most basic data.
@@ -77,5 +63,5 @@ After creating this zone, your basic shop configuration will be complete:
 
 * [Channels](../the-book/configuration/channels.md)
 * [Currencies](../the-book/configuration/currencies.md)
-* [Pricing](../the-book/products/pricing.md)
+* [Pricing](../the-book/products/pricing/)
 * [Locales](../the-book/configuration/locales.md)

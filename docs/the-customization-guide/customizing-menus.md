@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Customizing Menus
 
 Sylius provides various menus across its Shop and Admin interfaces — from customer account navigation to product form tabs and button groups. In Sylius 2.0, menu customization is handled in two main ways:
@@ -137,7 +123,6 @@ sylius_twig_hooks:
 
 ```twig
 {# templates/admin/order/show/content/header/title_block/actions/complete_payment.html.twig #}
-{% raw %}
 {% set order = hookable_metadata.context.resource %}
 {% set payment = order.getPayments.first %}
 
@@ -151,7 +136,6 @@ sylius_twig_hooks:
         </button>
     </form>
 {% endif %}
-{% endraw %}
 ```
 
 <figure><img src="../.gitbook/assets/Screenshot 2025-05-09 at 10.22.44.png" alt="" width="375"><figcaption></figcaption></figure>
@@ -211,9 +195,7 @@ sylius_twig_hooks:
 
 <button
     type="button"
-    class="list-group-item list-group-item-action {% raw %}
-{% if hookable_metadata.configuration.active|default(false) %}active{% endif %}
-{% endraw %}"
+    class="list-group-item list-group-item-action {% if hookable_metadata.configuration.active|default(false) %}active{% endif %}"
     data-bs-toggle="tab"
     data-bs-target="#product-manufacturer"
     role="tab"
@@ -225,9 +207,7 @@ sylius_twig_hooks:
 ```twig
 {# templates/admin/product/form/sections/manufacturer.html.twig #}
 
-<div class="tab-pane {% raw %}
-{% if hookable_metadata.configuration.active|default(false) %}show active{% endif %}
-{% endraw %}" id="product-manufacturer" role="tabpanel" tabindex="0">
+<div class="tab-pane {% if hookable_metadata.configuration.active|default(false) %}show active{% endif %}" id="product-manufacturer" role="tabpanel" tabindex="0">
     <div class="card mb-3">
         <div class="card-header">
             <div class="card-title">
@@ -293,9 +273,7 @@ sylius_twig_hooks:
 
 <button
     type="button"
-    class="list-group-item list-group-item-action {% raw %}
-{% if hookable_metadata.configuration.active|default(false) %}active{% endif %}
-{% endraw %}"
+    class="list-group-item list-group-item-action {% if hookable_metadata.configuration.active|default(false) %}active{% endif %}"
     data-bs-toggle="tab"
     data-bs-target="#product-variant-custom-media"
     role="tab"
@@ -307,9 +285,7 @@ sylius_twig_hooks:
 ```twig
 {# templates/admin/product_variant/form/sections/custom_media.html.twig #}
 
-<div class="tab-pane {% raw %}
-{% if hookable_metadata.configuration.active|default(false) %}show active{% endif %}
-{% endraw %}" id="product-variant-custom-media" role="tabpanel" tabindex="0">
+<div class="tab-pane {% if hookable_metadata.configuration.active|default(false) %}show active{% endif %}" id="product-variant-custom-media" role="tabpanel" tabindex="0">
     <div class="card mb-3">
         <div class="card-header">
             <div class="card-title">

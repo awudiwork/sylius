@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # How to add a custom translatable model?
 
 We can extend the approach described in the [How to Add a Custom Model](https://docs.sylius.com/the-customization-guide/customizing-models/how-to-add-a-custom-model) guide by making our custom model **translatable**. This is particularly useful for any entity whose content may vary based on locale, such as descriptions, instructions, and names.
@@ -482,9 +468,7 @@ These templates will override the default rendering and allow the macro to integ
     </div>
     <div class="card-body">
         <div class="row">
-            {% raw %}
-{% hook 'general' %}
-{% endraw %}
+            {% hook 'general' %}
         </div>
     </div>
 </div>
@@ -493,11 +477,9 @@ These templates will override the default rendering and allow the macro to integ
 ```twig
 {# templates/admin/supplier/form/sections/translations.html.twig #}
 
-{% raw %}
 {% import '@SyliusAdmin/shared/helper/translations.html.twig' as translations %}
 {% set form = hookable_metadata.context.form %}
 {% set prefixes = hookable_metadata.prefixes %}
-{% endraw %}
 
 <div class="card mb-3">
     <div class="card-header">
@@ -526,9 +508,7 @@ Create small templates to hook each translatable field.
 ```twig
 {# templates/admin/supplier/form/sections/translations/description.html.twig #}
 
-{% raw %}
 {% set form = hookable_metadata.context.form %}
-{% endraw %}
 
 <div class="col-12 col-md-12">
     {{ form_row(form.description) }}
@@ -538,9 +518,7 @@ Create small templates to hook each translatable field.
 ```twig
 {# templates/admin/supplier/form/sections/translations/name.html.twig #}
 
-{% raw %}
 {% set form = hookable_metadata.context.form %}
-{% endraw %}
 
 <div class="col-12 col-md-12">
     {{ form_row(form.name) }}
@@ -639,5 +617,5 @@ This layout includes:
 
 This structure provides a user-friendly editing experience and ensures consistency with the rest of the Sylius admin layout.
 
-<figure><img src="../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (18) (1).png" alt=""><figcaption></figcaption></figure>
 
