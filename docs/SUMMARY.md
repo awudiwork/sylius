@@ -85,6 +85,7 @@
 * [API](the-book/api/README.md)
   * [#todo](the-book/api/todo.md)
 * [🎨 Frontend & Themes](the-book/frontend-and-themes.md)
+* [🤖 AI Conversational Commerce](the-book/ai-conversational-commerce.md)
 * [➕ Sylius Plus](the-book/sylius-plus/README.md)
   * [➕ Loyalty](the-book/sylius-plus/loyalty.md)
 * [Support](the-book/support.md)
