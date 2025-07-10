@@ -1,5 +1,29 @@
 # CHANGELOG FOR `2.1.X`
 
+## v2.1.3 (2025-07-10)
+
+#### Details
+
+- [#18194](https://github.com/Sylius/Sylius/pull/18194) Refresh README image ([@CoderMaggie](https://github.com/CoderMaggie))
+- [#18196](https://github.com/Sylius/Sylius/pull/18196) [API] Set URL generation strategy for Taxon resource after the API Platform changes with usage of genId ([@GSadee](https://github.com/GSadee))
+- [#18198](https://github.com/Sylius/Sylius/pull/18198) [CI] Load Node version conditionally + bring back phpspecs for 2.0 full builds ([@GSadee](https://github.com/GSadee))
+- [#18199](https://github.com/Sylius/Sylius/pull/18199) [Core] Change where to andWhere method in ProductRepository ([@GSadee](https://github.com/GSadee))
+- [#18201](https://github.com/Sylius/Sylius/pull/18201) Fix generating random fixtures ([@GSadee](https://github.com/GSadee))
+- [#18202](https://github.com/Sylius/Sylius/pull/18202) [Admin] Fix error message during creating admin user by CLI command ([@GSadee](https://github.com/GSadee))
+- [#18184](https://github.com/Sylius/Sylius/pull/18184) [CS][DX] Refactor
+- [#18186](https://github.com/Sylius/Sylius/pull/18186) Update storage based locale switcher to redirect to homepage if the d… ([@TheMilek](https://github.com/TheMilek))
+- [#18203](https://github.com/Sylius/Sylius/pull/18203) [CS][DX] Refactor
+- [#18205](https://github.com/Sylius/Sylius/pull/18205) Adjust CONFLICTS files after upmerge from 1.14 ([@GSadee](https://github.com/GSadee))
+- [#18206](https://github.com/Sylius/Sylius/pull/18206) docs: fix broken link in resource-layer.md ([@dunglas](https://github.com/dunglas))
+- [#18185](https://github.com/Sylius/Sylius/pull/18185) Fix typo in documentation ([@guillaume-sainthillier](https://github.com/guillaume-sainthillier))
+- [#18209](https://github.com/Sylius/Sylius/pull/18209) Update AWS S3 documentation for image storage configuration ([@EvKoh](https://github.com/EvKoh))
+- [#18216](https://github.com/Sylius/Sylius/pull/18216) [ShopBundle] Fix missing void return ([@Prometee](https://github.com/Prometee))
+- [#18210](https://github.com/Sylius/Sylius/pull/18210) [Admin]  Fix UI of actions/rules/scopes ([@PiotrTulacz](https://github.com/PiotrTulacz))
+- [#18218](https://github.com/Sylius/Sylius/pull/18218) [Admin] Adjust UI directions of actions/rules/scopes ([@PiotrTulacz](https://github.com/PiotrTulacz))
+- [#18222](https://github.com/Sylius/Sylius/pull/18222) [Admin] Fix cancel button fallback url ([@NoResponseMate](https://github.com/NoResponseMate))
+- [#18219](https://github.com/Sylius/Sylius/pull/18219) [Admin] Fix product list actions positions while multiple ([@PiotrTulacz](https://github.com/PiotrTulacz))
+- [#18220](https://github.com/Sylius/Sylius/pull/18220) [Shop] Variant listening visual improvement ([@PiotrTulacz](https://github.com/PiotrTulacz))
+
 ## v2.1.2 (2025-06-17)
 
 #### Details
