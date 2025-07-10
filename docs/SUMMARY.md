@@ -157,8 +157,7 @@
   * [How to add a custom shipping calculator?](shipping/how-to-add-a-custom-shipping-calculator.md)
 * [Shop](shop/README.md)
   * [How to disable localized URLs?](shop/how-to-disable-localized-urls.md)
-
-## The Cookbook 2.0
+  * [How to customize the product show page?](shop/how-to-customize-the-product-show-page.md)
 
 ## The Performance Guide
 
