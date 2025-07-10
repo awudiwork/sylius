@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Cart flow
 
 Picture this: A user visits your Sylius shop and exclaims, “Someone’s been using my cart! It’s full of items I didn’t add!” Let’s avoid this surprise by exploring how Sylius handles cart functionality.

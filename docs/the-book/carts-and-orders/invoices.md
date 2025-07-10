@@ -1,26 +1,8 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # 🧩 Invoices
 
 An invoice is a commercial document issued by a shop as a confirmation of a sales transaction. It lists the products, quantities, and prices agreed upon, and typically includes payment terms (e.g., due date, payment status). For the shop, it's a sales invoice; for the customer, it's a purchase invoice.
 
-<div data-full-width="false">
-
-<figure><img src="../../.gitbook/assets/sylius-docs-pluginfeature-start.png" alt=""><figcaption></figcaption></figure>
-
-</div>
+<div data-full-width="false"><figure><img src="../../.gitbook/assets/sylius-docs-pluginfeature-start.png" alt=""><figcaption></figcaption></figure></div>
 
 ## Invoicing in Sylius
 
@@ -56,8 +38,4 @@ The plugin uses the billing data provided in Sylius Channels for invoice details
 
 * [Sylius Invoicing Plugin](https://github.com/Sylius/InvoicingPlugin)
 
-<div data-full-width="false">
-
-<figure><img src="../../.gitbook/assets/sylius-docs-pluginfeature-end.png" alt=""><figcaption></figcaption></figure>
-
-</div>
+<div data-full-width="false"><figure><img src="../../.gitbook/assets/sylius-docs-pluginfeature-end.png" alt=""><figcaption></figcaption></figure></div>

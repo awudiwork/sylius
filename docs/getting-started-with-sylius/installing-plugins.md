@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Installing Plugins
 
 Sylius is highly flexible and can easily be customized to fit your business needs. However, you don’t always have to build custom solutions from scratch! Sylius supports the creation of **plugins**, which are the best way to extend its functionality and share your custom features with the community.
@@ -69,5 +55,5 @@ By using plugins, you avoid reinventing the wheel and speed up the development p
 
 #### Learn more
 
-* [Plugins Development Guide](https://old-docs.sylius.com/en/1.13/book/plugins/guide/index.html)
+* [Plugins](https://app.gitbook.com/o/fmYDcx6GlpT1jw8tUL38/s/bg4sD3RRdxQ553MqSYTa/)
 * :sparkles: [Sylius Store: The Official Plugins List](https://store.sylius.com/)

@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Adjustments
 
 **Adjustments** are closely tied to orders in Sylius. They influence the total amount of an order and can be applied at different levels:

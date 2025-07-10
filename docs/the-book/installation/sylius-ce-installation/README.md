@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Sylius CE Installation
 
 ### Setting up a fresh Sylius project
@@ -137,7 +123,7 @@ MAILER_URL=gmail://username:password@local
 {% hint style="info" %}
 Email delivery is disabled for _test_, _dev_ and _staging_ environments by default. The _prod_ environment has delivery turned on.
 
-You can learn more about configuring mailer service in [How to configure mailer?](../../../the-cookbook-2.0/how-to-configure-mailer.md)
+You can learn more about configuring mailer service in [How to configure mailer?](../../../emails/how-to-configure-mailer.md)
 {% endhint %}
 
 ### Accessing the Shop
@@ -145,7 +131,7 @@ You can learn more about configuring mailer service in [How to configure mailer?
 We strongly recommend using the Symfony Local Web Server by running the `symfony server:start` command and then accessing `https://127.0.0.1:8000` in your web browser to see the shop.
 
 {% hint style="info" %}
-Get to know more about using Symfony Local Web Server[in the Symfony server documentation](https://symfony.com/doc/current/setup/symfony\_server.html). If you are using a built-in server check [here](https://symfony.com/doc/current/cookbook/web\_server/built\_in.html).
+Get to know more about using Symfony Local Web Server[in the Symfony server documentation](https://symfony.com/doc/current/setup/symfony_server.html). If you are using a built-in server check [here](https://symfony.com/doc/current/cookbook/web_server/built_in.html).
 {% endhint %}
 
 You can log to the administrator panel located at `/admin` with the credentials you have provided during the installation process.
@@ -163,7 +149,7 @@ In the root directory of your project you will find these important subdirectori
 * `public/` - there you will be placing assets of your project
 
 {% hint style="info" %}
-As it was mentioned before we are basing on Symfony, that is why we’ve adopted its approach to architecture. Read more [in the Symfony documentation](https://symfony.com/doc/current/quick\_tour/the\_architecture.html). Read also about the [best practices while structuring your project](https://symfony.com/doc/current/best\_practices/creating-the-project.html#structuring-the-application).
+As it was mentioned before we are basing on Symfony, that is why we’ve adopted its approach to architecture. Read more [in the Symfony documentation](https://symfony.com/doc/current/quick_tour/the_architecture.html). Read also about the [best practices while structuring your project](https://symfony.com/doc/current/best_practices/creating-the-project.html#structuring-the-application).
 {% endhint %}
 
 ### Running asynchronous tasks

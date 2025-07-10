@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Contributing Translations
 
 Sylius supports multiple languages, and we rely on the community to help maintain and improve translations. Even small contributions, like fixing a typo or translating a new string, can make a big impact for users around the world.
@@ -55,7 +41,7 @@ If you're fixing or improving a small number of strings, we **strongly recommend
    At the top left of the repository page, open the branch selector and:
    * Choose the **lowest supported minor version** where your change is missing (e.g.,  `1.14`, or `2.0`).
    * This increases the chance your translation will be included in a **patch release** and propagated upward via merges.
-   * 🧠 Tip: Check the [Release Cycle docs](../../sylius-2.0-documentation/organization/release-cycle.md) to identify currently maintained versions.
+   * 🧠 Tip: Check the [Release Cycle docs](../../release-cycle/) to identify currently maintained versions.
 3.  **Browse to the translation file**\
     Use GitHub’s file browser or press `t` to search for the path quickly. Translation files live under:
 

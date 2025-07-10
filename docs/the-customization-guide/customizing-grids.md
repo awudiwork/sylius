@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Customizing Grids
 
 Grids in Sylius are responsible for rendering lists of entities in the administration panel, such as products, customers, or orders.\

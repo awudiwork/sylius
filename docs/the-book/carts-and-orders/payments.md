@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Payments
 
 Sylius has a flexible payment management system that integrates with various gateways through the Payum library. Payum handles operations like capturing, refunds, and recurring payments, while Sylius manages payments within the checkout and tracks related payment data.

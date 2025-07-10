@@ -83,19 +83,7 @@ Now that your calculator is registered, you can create a new **Shipping Method**
 * **Size**: How many units fit into one parcel.
 * **Price**: The cost per parcel.
 
-<div>
-
-<figure><img src="../.gitbook/assets/shipping-calculator.png" alt=""><figcaption><p>Configuration in the Admin Panel</p></figcaption></figure>
-
- 
-
-<figure><img src="../.gitbook/assets/shipping-cost-1.png" alt=""><figcaption><p>Shipping cost for 1 parcel</p></figcaption></figure>
-
- 
-
-<figure><img src="../.gitbook/assets/shipping-cost-2.png" alt=""><figcaption><p>Shipping cost for 4 parcels</p></figcaption></figure>
-
-</div>
+<div><figure><img src="../.gitbook/assets/shipping-calculator.png" alt=""><figcaption><p>Configuration in the Admin Panel</p></figcaption></figure> <figure><img src="../.gitbook/assets/shipping-cost-1.png" alt=""><figcaption><p>Shipping cost for 1 parcel</p></figcaption></figure> <figure><img src="../.gitbook/assets/shipping-cost-2.png" alt=""><figcaption><p>Shipping cost for 4 parcels</p></figcaption></figure></div>
 
 ## Testing the Custom Logic via API
 

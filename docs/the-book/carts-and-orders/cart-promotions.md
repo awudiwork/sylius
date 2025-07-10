@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Cart Promotions
 
 The Cart Promotions system in Sylius is highly flexible, combining **promotion rules** and **actions** to create tailored discount programs.
@@ -140,6 +126,6 @@ $this->container->get('sylius.promotion_applicator')->apply($order, $promotion);
 **Filters** allow actions to target specific groups of products. For example, use a [TaxonFilter](https://github.com/Sylius/Sylius/blob/2.0/src/Sylius/Component/Core/Promotion/Filter/TaxonFilter.php) to apply a promotion only to items within a specific taxon.
 
 {% hint style="info" %}
-Check [these scenarios](https://github.com/Sylius/Sylius/blob/2.0/features/promotion/receiving\_discount/receiving\_fixed\_discount\_on\_products\_from\_specific\_taxon.feature) on promotion filters to have a better understanding of them.
+Check [these scenarios](https://github.com/Sylius/Sylius/blob/2.0/features/promotion/receiving_discount/receiving_fixed_discount_on_products_from_specific_taxon.feature) on promotion filters to have a better understanding of them.
 {% endhint %}
 

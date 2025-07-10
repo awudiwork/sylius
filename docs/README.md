@@ -1,20 +1,6 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: false
-  pagination:
-    visible: true
----
+# 📖 Sylius Documentation
 
-# 📖 Sylius 2.0 Documentation
-
-<figure><img src="https://sylius.com/assets/github-readme.png?2" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://sylius.com/assets/github-readme.png?3" alt=""><figcaption></figcaption></figure>
 
 **Sylius** is an open-source e-commerce platform with a modular architecture, providing a robust foundation for online stores. It focuses on delivering a dynamic developer experience and allows extensive customization to meet unique business needs.
 
@@ -44,8 +30,8 @@ So why choose Sylius? Because it's more than just an e-commerce platform - it's 
 
 ### Organization
 
-* [Release Cycle](sylius-2.0-documentation/organization/release-cycle.md)
-* [Backwards Compatibility Promise](sylius-2.0-documentation/organization/backwards-compatibility-promise.md)
+* [Release Cycle](release-cycle/)
+* [Backwards Compatibility Promise](release-cycle/backwards-compatibility-promise.md)
 * [Sylius Team](https://sylius.com/team/)
 * [Sylius Roadmap](https://sylius.com/roadmap/)
 
@@ -94,8 +80,9 @@ Documentation sections referring to Sylius Plus features are:
 * [Customer Pools](the-book/customers/customer-pools.md)
 * [Splitting Shipments](the-book/carts-and-orders/shipments.md)
 * Returns
-  * Returns related [E-Mails](the-book/architecture/e-mails.md#sylius-plus-return-requests-emails)
+  * Returns related emails
 * [Multi-Source Inventory](the-book/products/multi-source-inventory.md)
 * Loyalty
 * Marketplace Suite
 * B2B Suite
+  * [Pricing Engine](the-book/products/pricing/b2b-pricing-engine/)

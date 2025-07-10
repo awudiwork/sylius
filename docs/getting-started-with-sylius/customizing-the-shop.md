@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Customizing the Shop
 
 Sylius stands out from other eCommerce platforms not only because of its vibrant community and clean codebase but also due to its exceptional developer experience. Its flexibility and ease of customization allow you to adapt the platform to meet your unique business needs.
@@ -31,10 +17,10 @@ The default Sylius templates are clean and elegant, but you might want to make y
     ```bash
     assets/shop/images/logo.png
     ```
-2.  Next, you need to import the logo in the `entry.js` file located at:
+2.  Next, you need to import the logo in the `entrypoint.js` file located at:
 
     ```bash
-    assets/shop/entry.js
+    assets/shop/entrypoint.js
     ```
 3.  Add the following line to import the logo:
 
@@ -51,10 +37,12 @@ The default Sylius templates are clean and elegant, but you might want to make y
 Now, let’s create the template that is responsible for displaying the logo. All templates are supposed to be managed and organized in the `/templates` directory. Your new template might look like this:
 
 ```twig
-<img src="{{ asset('build/app/shop/images/logo.25de7998.png', 'app.shop') }}" alt="Logo"/>
+{# templates/shop/header/content/logo/content/logo.html.twig #}
+
+<img src="{{ asset('build/app/shop/images/logo.png', 'app.shop') }}" alt="Logo"/>
 ```
 
-Ensure the second argument in the `asset()` function is correct for the app context. For more details, check the [Managing Assets](../the-book/frondend-and-themes.md) page.
+Ensure the second argument in the `asset()` function is correct for the app context. For more details, check the [Managing Assets](../the-book/frontend-and-themes.md) page.
 
 ### Step 3: Override the Template with Sylius Twig Hooks
 
@@ -82,7 +70,7 @@ sylius_twig_hooks:
     hooks:
         sylius_shop.base.header.content.logo:
             content:
-                template: 'header/content/logo/content/logo.html.twig'
+                template: 'shop/header/content/logo/content/logo.html.twig'
 
 ```
 
@@ -116,4 +104,4 @@ After following either method, your custom logo should now be displayed on your 
 
 Congratulations! You’ve successfully customized a Sylius template. Let’s take things a step further by introducing your **business logic** into the system.
 
-For more information on customizing templates or Sylius template events, check out the [**Customizing Templates**](../the-customization-guide/customizing-templates.md) chapter and the [**Managing Assets**](../the-book/frondend-and-themes.md) documentation.
+For more information on customizing templates or Sylius template events, check out the [**Customizing Templates**](../the-customization-guide/customizing-templates.md) chapter and the [**Managing Assets**](../the-book/frontend-and-themes.md) documentation.
