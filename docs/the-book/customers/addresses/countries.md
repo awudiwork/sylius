@@ -1,20 +1,6 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Countries
 
-**Countries** are a part of the Addressing concept. The **Country** entity represents a real country that your shop is willing to sell its goods in (for example the UK). It has an ISO code to be identified easily ([ISO 3166-1 alpha-2](https://www.iso.org/iso/country\_codes)).
+**Countries** are a part of the Addressing concept. The **Country** entity represents a real country that your shop is willing to sell its goods in (for example the UK). It has an ISO code to be identified easily ([ISO 3166-1 alpha-2](https://www.iso.org/iso/country_codes)).
 
 Countries might also have **Provinces**, which are in fact a general name for an administrative division, within a country. Therefore we understand provinces as states of the USA, voivodeships of Poland, or Bundesländer of Germany.
 

@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Search
 
 Product search is a common feature in eCommerce systems, and Sylius offers a simple solution through its **grid filter** functionality. For more advanced use cases, you can extend this functionality or integrate it with **ElasticSearch**.

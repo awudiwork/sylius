@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Taxation
 
 Sylius has a flexible taxation system that allows you to apply taxes based on different products, billing zones, and custom tax calculators. Let’s break it down.

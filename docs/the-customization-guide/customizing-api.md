@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Customizing API
 
 Sylius uses API Platform to manage all API endpoints. This lets you configure endpoints using YAML or XML files or PHP class attributes. Here’s how to add, remove, and modify Sylius API endpoints.

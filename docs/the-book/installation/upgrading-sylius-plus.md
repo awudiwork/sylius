@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Upgrading Sylius Plus
 
 Sylius regularly releases new versions of Sylius Plus modules. Each release comes with an `UPGRADE.md` file, which is meant to help in the upgrading process.

@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # State Machine
 
 In Sylius, the default approach to managing frequent changes in the system is through the **Symfony Workflow,** which offers a highly flexible and well-organized solution. However, Sylius also provides the option to use the **Winzou State Machine** if preferred.&#x20;

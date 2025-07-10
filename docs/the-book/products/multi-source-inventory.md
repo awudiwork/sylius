@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # ➕ Multi-Source Inventory
 
 <div data-full-width="false"><figure><img src="../../.gitbook/assets/sylius-docs-plusfeature-start (1).png" alt=""><figcaption></figcaption></figure></div>
@@ -63,7 +49,7 @@ The resolver picks the first available Inventory Source based on these filters. 
 You can add custom filters by implementing the `Sylius\Plus\Inventory\Application\Filter\InventorySourcesFilterInterface` and registering it with the `sylius_plus.inventory.inventory_sources_filter` tag. Filters can be assigned higher or lower priority values depending on your needs.
 
 {% hint style="info" %}
-For more details on creating a custom Inventory Sources filter, refer to [this Cookbook](../../the-cookbook-2.0/how-to-create-a-custom-inventory-sources-filter.md).
+For more details on creating a custom Inventory Sources filter, refer to [this Cookbook](broken-reference).
 {% endhint %}
 
 ### Resolving InventorySourceStock for ordered products

@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Product Associations
 
 Associations of products can be used as a marketing tool for suggesting to your customers, what products to buy together with the one they are currently considering. Associations can increase your shop’s efficiency. You choose what strategy you prefer. They are fully configurable.

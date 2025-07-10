@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Inventory
 
 Sylius uses a straightforward approach to inventory management. The current stock level of an item is stored on the **ProductVariant** entity, specifically as the `onHand` value.

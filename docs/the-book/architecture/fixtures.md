@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Fixtures
 
 Fixtures are used mainly for testing, but also for having your shop in a certain state, and having defined data - they ensure that there is a fixed environment in which your application is working.
