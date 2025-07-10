@@ -1,5 +1,20 @@
 # CHANGELOG FOR `2.0.X`
 
+## v2.0.11 (2025-07-10)
+
+- [#18199](https://github.com/Sylius/Sylius/pull/18199) [Core] Change where to andWhere method in ProductRepository ([@GSadee](https://github.com/GSadee))
+- [#18202](https://github.com/Sylius/Sylius/pull/18202) [Admin] Fix error message during creating admin user by CLI command ([@GSadee](https://github.com/GSadee))
+- [#18205](https://github.com/Sylius/Sylius/pull/18205) Adjust CONFLICTS files after upmerge from 1.14 ([@GSadee](https://github.com/GSadee))
+- [#18206](https://github.com/Sylius/Sylius/pull/18206) docs: fix broken link in resource-layer.md ([@dunglas](https://github.com/dunglas))
+- [#18185](https://github.com/Sylius/Sylius/pull/18185) Fix typo in documentation ([@guillaume-sainthillier](https://github.com/guillaume-sainthillier))
+- [#18209](https://github.com/Sylius/Sylius/pull/18209) Update AWS S3 documentation for image storage configuration ([@EvKoh](https://github.com/EvKoh))
+- [#18216](https://github.com/Sylius/Sylius/pull/18216) [ShopBundle] Fix missing void return ([@Prometee](https://github.com/Prometee))
+- [#18222](https://github.com/Sylius/Sylius/pull/18222) [Admin] Fix cancel button fallback url ([@NoResponseMate](https://github.com/NoResponseMate))
+- [#18219](https://github.com/Sylius/Sylius/pull/18219) [Admin] Fix product list actions positions while multiple ([@PiotrTulacz](https://github.com/PiotrTulacz))
+- [#18220](https://github.com/Sylius/Sylius/pull/18220) [Shop] Variant listening visual improvement ([@PiotrTulacz](https://github.com/PiotrTulacz))
+
+#### Details
+
 ## v2.0.10 (2025-06-17)
 
 #### Details
