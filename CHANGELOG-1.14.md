@@ -1,5 +1,12 @@
 # CHANGELOG FOR `1.14.X`
 
+## v1.14.7 (2025-07-10)
+
+#### Details
+
+- [#18195](https://github.com/Sylius/Sylius/pull/18195) [Composer] Conflict with symfony/serializer:^6.4.23 because of a fatal error in APIP 2.7 ([@GSadee](https://github.com/GSadee))
+- [#18199](https://github.com/Sylius/Sylius/pull/18199) [Core] Change where to andWhere method in ProductRepository ([@GSadee](https://github.com/GSadee))
+
 ## v1.14.6 (2025-06-17)
 
 #### Details
