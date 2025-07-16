@@ -123,7 +123,7 @@ MAILER_URL=gmail://username:password@local
 {% hint style="info" %}
 Email delivery is disabled for _test_, _dev_ and _staging_ environments by default. The _prod_ environment has delivery turned on.
 
-You can learn more about configuring mailer service in [How to configure mailer?](../../../emails/how-to-configure-mailer.md)
+You can learn more about configuring mailer service in [How to configure mailer?](../../emails/how-to-configure-mailer.md)
 {% endhint %}
 
 ### Accessing the Shop
@@ -162,8 +162,8 @@ To enable asynchronous tasks (for example for Catalog Promotions), remember abou
 
 For production environments, we suggest usage of more robust solution like Supervisor, which will ensure that the process is still running even if some failure will occur. For more information, please visit [Symfony documentation](https://symfony.com/doc/current/messenger.html#supervisor-configuration).
 
-You can learn more about Catalog Promotions [here](../../products/catalog-promotions.md).
+You can learn more about Catalog Promotions [here](../products/catalog-promotions.md).
 
 ### Contributing
 
-If you would like to contribute to Sylius - please go to the [Contribution Guide](../../contributing/).
+If you would like to contribute to Sylius - please go to the [Contribution Guide](../contributing/).

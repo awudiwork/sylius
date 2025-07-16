@@ -12,7 +12,7 @@ What are our core values and what makes us different from other solutions?
 * Unlimited flexibility and simple customization
 * Developer-friendly, using the latest technologies
 * Developed using best practices and BDD approach
-* [Highest quality of code](https://scrutinizer-ci.com/g/Sylius/Sylius/)
+* Highest quality of code
 
 And much more, but we will let you discover it yourself.
 

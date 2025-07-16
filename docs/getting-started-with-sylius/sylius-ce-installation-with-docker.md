@@ -1,14 +1,10 @@
-# Sylius CE Installation with Docker
+# Installation
 
-## Docker
+{% hint style="warning" %}
+**Traditional Installation**
 
-Docker is an open-source platform for developing, delivering, and running applications. It allows you to separate your application from your infrastructure, simplifying software delivery. With Docker, you can manage infrastructure the same way you manage applications. This platform methodology enables fast code delivery, testing, and implementation, significantly reducing the delay between writing code and running it in the production environment.
-
-{% hint style="info" %}
-Make sure you have [Docker](https://docs.docker.com/get-docker/) and [make](https://www.gnu.org/software/make/manual/make.html/) installed on your local machine.
+If you prefer to install Sylius without Docker, use this guide:  <a href="../the-book/sylius-ce-installation/" class="button secondary" data-icon="box-open-full">Sylius Traditional Installation</a>
 {% endhint %}
-
-***
 
 ## Project Setup
 
@@ -17,8 +13,6 @@ Clone the Sylius-Standard repository, or if you are using GitHub, you can use th
 ```bash
 git clone git@github.com:Sylius/Sylius-Standard.git your_project_name
 ```
-
-***
 
 ## Development
 
@@ -31,9 +25,21 @@ open http://localhost/
 ```
 {% endcode %}
 
-***
+<details>
 
-## Troubleshooting
+<summary>What is Docker</summary>
+
+Docker is an open-source platform for developing, delivering, and running applications. It allows you to separate your application from your infrastructure, simplifying software delivery. With Docker, you can manage infrastructure the same way you manage applications. This platform methodology enables fast code delivery, testing, and implementation, significantly reducing the delay between writing code and running it in the production environment.
+
+{% hint style="warning" %}
+Make sure you have [Docker](https://docs.docker.com/get-docker/) and [make](https://www.gnu.org/software/make/manual/make.html/) installed on your local machine.
+{% endhint %}
+
+</details>
+
+<details>
+
+<summary>Troubleshooting</summary>
 
 If you encounter errors while running `make init`, such as services failing to start or exiting unexpectedly, it might be caused by **port conflicts** with services already running on your host system.
 
@@ -79,9 +85,11 @@ open http://localhost:8080 # for the example above
 ```
 {% endhint %}
 
-***
+</details>
 
-## Other docker dedicated make commands
+<details>
+
+<summary>Other Docker dedicated make commands</summary>
 
 Besides the initial `make init` command, the `Makefile` includes several other useful shortcuts for managing your Docker environment:
 
@@ -97,3 +105,7 @@ Besides the initial `make init` command, the `Makefile` includes several other u
 | `make node-shell`           | Opens a shell in a fresh Node.js container. Good for running JS-related tools like `npm install`.       |
 | `make node-watch`           | Runs `npm run watch` inside the Node.js container for automatic frontend asset rebuilding.              |
 | `make docker-compose-check` | Verifies that Docker Compose is available and prints the current version.                               |
+
+
+
+</details>
