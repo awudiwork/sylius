@@ -6,6 +6,8 @@
 If you prefer to install Sylius without Docker, use this guide:  <a href="../the-book/sylius-ce-installation/" class="button secondary" data-icon="box-open-full">Sylius Traditional Installation</a>
 {% endhint %}
 
+{% stepper %}
+{% step %}
 ## Project Setup
 
 Clone the Sylius-Standard repository, or if you are using GitHub, you can use the 'Use this template' button to create a new repository with Sylius-Standard content.
@@ -13,7 +15,9 @@ Clone the Sylius-Standard repository, or if you are using GitHub, you can use th
 ```bash
 git clone git@github.com:Sylius/Sylius-Standard.git your_project_name
 ```
+{% endstep %}
 
+{% step %}
 ## Development
 
 [Sylius Standard](https://github.com/Sylius/Sylius-Standard) comes with the [docker compose](https://docs.docker.com/compose/) configuration. You can start the development environment via the `make init` command in your favourite terminal. Please note that the speed of building images and initialising containers depends on your local machine and internet connection - it may take some time. Then enter `localhost` in your browser or execute `open http://localhost/` in your terminal.
@@ -24,6 +28,8 @@ make init
 open http://localhost/
 ```
 {% endcode %}
+{% endstep %}
+{% endstepper %}
 
 <details>
 
