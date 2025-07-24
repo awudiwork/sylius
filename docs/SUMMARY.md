@@ -8,7 +8,9 @@
 
 ## Getting Started with Sylius
 
-* [Installation](getting-started-with-sylius/installation.md)
+* [Choosing Sylius: When and Why](getting-started-with-sylius/choosing-sylius-when-and-why.md)
+* [Before You Begin](getting-started-with-sylius/system-requirements.md)
+* [Installation](getting-started-with-sylius/sylius-ce-installation-with-docker.md)
 * [Basic Configuration](getting-started-with-sylius/basic-configuration.md)
 * [Shipping & Payment](getting-started-with-sylius/shipping-and-payment.md)
 * [First Product](getting-started-with-sylius/first-product.md)
@@ -21,18 +23,13 @@
 
 ## The Book
 
-* [Index](the-book/index.md)
 * [Introduction to Sylius](the-book/introduction-to-sylius.md)
 * [Understanding Environments](the-book/understanding-environments.md)
-* [Installation](the-book/installation/README.md)
-  * [System Requirements](the-book/installation/system-requirements.md)
-  * [Sylius CE Installation](the-book/installation/sylius-ce-installation/README.md)
-    * [Sylius CE Installation with Docker](the-book/installation/sylius-ce-installation/sylius-ce-installation-with-docker.md)
-  * [➕ Sylius Plus Installation](the-book/installation/sylius-plus-installation.md)
-  * [Upgrading Sylius CE](the-book/installation/upgrading-sylius-ce.md)
-  * [Upgrading Sylius Plus](the-book/installation/upgrading-sylius-plus.md)
+* [Sylius CE Installation](the-book/sylius-ce-installation/README.md)
+  * [➕ Sylius Plus Installation](the-book/sylius-ce-installation/sylius-plus-installation.md)
+  * [Upgrading Sylius CE](the-book/sylius-ce-installation/upgrading-sylius-ce.md)
+  * [Upgrading Sylius Plus](the-book/sylius-ce-installation/upgrading-sylius-plus.md)
 * [Architecture](the-book/architecture/README.md)
-  * [Architecture Overview](the-book/architecture/architecture-overview.md)
   * [Architectural Drivers](the-book/architecture/architectural-drivers.md)
   * [Resource Layer](the-book/architecture/resource-layer.md)
   * [State Machine](the-book/architecture/state-machine.md)
@@ -55,7 +52,6 @@
     * [Addresses](the-book/customers/addresses/addresses.md)
     * [Address Book](the-book/customers/addresses/address-book.md)
 * [Products](the-book/products/README.md)
-  * [Products](the-book/products/products.md)
   * [Product Reviews](the-book/products/product-reviews.md)
   * [Product Associations](the-book/products/product-associations.md)
   * [Attributes](the-book/products/attributes.md)
@@ -157,8 +153,7 @@
   * [How to add a custom shipping calculator?](shipping/how-to-add-a-custom-shipping-calculator.md)
 * [Shop](shop/README.md)
   * [How to disable localized URLs?](shop/how-to-disable-localized-urls.md)
-
-## The Cookbook 2.0
+  * [How to customize the product show page?](shop/how-to-customize-the-product-show-page.md)
 
 ## The Performance Guide
 
