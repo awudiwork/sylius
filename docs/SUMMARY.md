@@ -151,6 +151,8 @@
 * [Shipping](shipping/README.md)
   * [How to add a custom shipping method rule?](shipping/how-to-add-a-custom-shipping-method-rule.md)
   * [How to add a custom shipping calculator?](shipping/how-to-add-a-custom-shipping-calculator.md)
+* [B2B](b2b/README.md)
+  * [How to use B2B Suite without Elasticsearch?](b2b/how-to-use-b2b-suite-without-elasticsearch.md)
 * [Shop](shop/README.md)
   * [How to disable localized URLs?](shop/how-to-disable-localized-urls.md)
   * [How to customize the product show page?](shop/how-to-customize-the-product-show-page.md)
