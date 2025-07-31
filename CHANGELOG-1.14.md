@@ -1,5 +1,12 @@
 # CHANGELOG FOR `1.14.X`
 
+## v1.14.8 (2025-07-31)
+
+#### Details
+
+- [#18266](https://github.com/Sylius/Sylius/pull/18266) [Fixtures] Make factory example constructor arguments protected ([@GSadee](https://github.com/GSadee))
+- [#18270](https://github.com/Sylius/Sylius/pull/18270) Send Password Request Mail only on enabled Users ([@k-kubacki](https://github.com/k-kubacki))
+
 ## v1.14.7 (2025-07-10)
 
 #### Details
