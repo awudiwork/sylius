@@ -1,7 +1,7 @@
 {
     "name": "sylius/sylius",
     "type": "library",
-    "version": "v2.0.11-dev",
+    "version": "v2.0.12-dev",
     "description": "E-Commerce platform for PHP, based on Symfony framework.",
     "homepage": "https://sylius.com",
     "license": "MIT",
@@ -243,7 +243,8 @@
     },
     "conflict": {
         "api-platform/jsonld": "^4.1.1",
-        "behat/gherkin": "^4.13.0"
+        "behat/gherkin": "^4.13.0",
+        "symfony/ux-live-component": "2.28.0 || 2.28.1"
     },
     "config": {
         "preferred-install": {
