@@ -61,7 +61,7 @@ acme_sylius_payment:
 
 From now on, your new Payment Gateway should be available in the admin panel (Url: `/admin/payment-methods`).
 
-<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption><p>New payment method available</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption><p>New payment method available</p></figcaption></figure>
 
 3. **Add Field Templates**\
    Create a template for each field you need for example `templates/admin/payment_method/form/api_key.html.twig`:

@@ -10,7 +10,7 @@ Architectural Drivers are the key factors that influence all the decisions we ma
 
 Due to the decision to base Sylius on the **Symfony** framework (see below), **PHP** was the only possible option as a programming language. Nevertheless, a good decision! This language has been dynamically developing for the last few years and still powers up most of the websites and applications on the World Wide Web.
 
-Currently supported PHP versions can be seen in [this chapter.](../installation/system-requirements.md)
+Currently supported PHP versions can be seen in [this chapter.](../../getting-started-with-sylius/system-requirements.md)
 
 #### Main frameworks and libraries
 
@@ -61,7 +61,7 @@ Sylius offers a lot of standard e-commerce features, that could and should be us
 **Question to be asked:** is it possible to easily add new, more advanced functionality to the module/class/service I implement? **Examples:**
 
 * promotions [actions](https://github.com/Sylius/Sylius/blob/2.0/src/Sylius/Bundle/CoreBundle/Resources/config/services/promotion.xml) and [rules](https://github.com/Sylius/Sylius/blob/2.0/src/Sylius/Bundle/PromotionBundle/Resources/config/services.xml) registered with tags
-* state machine [callbacks](https://github.com/Sylius/Sylius/blob/2.0/src/Sylius/Bundle/CoreBundle/Resources/config/app/state\_machine/sylius\_order.yml)
+* state machine [callbacks](https://github.com/Sylius/Sylius/blob/2.0/src/Sylius/Bundle/CoreBundle/Resources/config/app/state_machine/sylius_order.yml)
 * resource [events](https://github.com/Sylius/SyliusResourceBundle/blob/1.12/src/Bundle/Controller/ResourceController.php#L175)
 
 #### Customizability

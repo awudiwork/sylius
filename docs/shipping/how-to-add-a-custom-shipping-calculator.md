@@ -187,12 +187,12 @@ sylius:
 
 * Product "Adventurous Aurora Cap" has a **weight of 10**.
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Shipping method **"UPS"** uses the new `Rate per weight unit` calculator. \
   Admin sets **$10.00 per weight unit** for the channel.
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 💡 The `amount` is defined in the smallest currency unit (e.g., cents for USD/EUR).\
@@ -201,7 +201,7 @@ If you configure $10.00, Sylius stores it as `1000`.
 
 * At checkout, the shipping cost is calculated as `10 × $10 = $100`.
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
