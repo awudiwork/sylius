@@ -1,5 +1,17 @@
 # CHANGELOG FOR `2.1.X`
 
+## v2.1.4 (2025-07-31)
+
+#### Details
+
+- [#18237](https://github.com/Sylius/Sylius/pull/18237) [PaymentRequest] Keep the already set payload when available ([@Prometee](https://github.com/Prometee))
+- [#18238](https://github.com/Sylius/Sylius/pull/18238) [Shop] Allow contextual product cards ([@NoResponseMate](https://github.com/NoResponseMate))
+- [#18257](https://github.com/Sylius/Sylius/pull/18257) Update README image ([@CoderMaggie](https://github.com/CoderMaggie))
+- [#18266](https://github.com/Sylius/Sylius/pull/18266) [Fixtures] Make factory example constructor arguments protected ([@GSadee](https://github.com/GSadee))
+- [#18274](https://github.com/Sylius/Sylius/pull/18274) [Composer] Temporarily add conflict with symfony/ux ([@GSadee](https://github.com/GSadee))
+- [#18270](https://github.com/Sylius/Sylius/pull/18270) Send Password Request Mail only on enabled Users ([@k-kubacki](https://github.com/k-kubacki))
+- [#18279](https://github.com/Sylius/Sylius/pull/18279) [Composer] Limit conflict with symfony/ux ([@GSadee](https://github.com/GSadee))
+
 ## v2.1.3 (2025-07-10)
 
 #### Details
