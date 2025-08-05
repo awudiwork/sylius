@@ -26,6 +26,10 @@ To get the most out of Sylius, especially version 2.x, we recommend brushing up 
 * [Symfony Forms](https://symfony.com/doc/current/forms.html) (used heavily in Sylius admin)
 * [SymfonyCasts: Symfony 7 Track](https://symfonycasts.com/tracks/symfony)
 
+**👨‍🎓 Sylius Academy**
+
+* [Sylius Practical Mastery Course](https://academy.sylius.com/course/sylius-practical-mastery-course/)
+
 ***
 
 ## System Requirements

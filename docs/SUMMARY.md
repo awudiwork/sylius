@@ -9,7 +9,7 @@
 ## Getting Started with Sylius
 
 * [Choosing Sylius: When and Why](getting-started-with-sylius/choosing-sylius-when-and-why.md)
-* [Before You Begin](getting-started-with-sylius/system-requirements.md)
+* [Before You Begin](getting-started-with-sylius/before-you-begin.md)
 * [Installation](getting-started-with-sylius/sylius-ce-installation-with-docker.md)
 * [Basic Configuration](getting-started-with-sylius/basic-configuration.md)
 * [Shipping & Payment](getting-started-with-sylius/shipping-and-payment.md)
@@ -95,6 +95,7 @@
   * [Contributing Documentation](the-book/contributing/contributing-documentation.md)
   * [Contributing Translations](the-book/contributing/contributing-translations.md)
   * [Key Contributors](the-book/contributing/key-contributors.md)
+* [👨‍🎓 Sylius Course](https://academy.sylius.com/course/sylius-practical-mastery-course/)
 
 ## 🛠️ The Customization Guide
 

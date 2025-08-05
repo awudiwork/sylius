@@ -1,18 +1,3 @@
----
-layout:
-  width: default
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # How to automatically store images on AWS-S3?
 
 This guide explains how to configure your Sylius 2.x store to automatically upload and store images (such as product images) on Amazon Web Services (AWS) S3.\

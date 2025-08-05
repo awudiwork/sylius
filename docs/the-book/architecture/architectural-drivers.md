@@ -10,7 +10,7 @@ Architectural Drivers are the key factors that influence all the decisions we ma
 
 Due to the decision to base Sylius on the **Symfony** framework (see below), **PHP** was the only possible option as a programming language. Nevertheless, a good decision! This language has been dynamically developing for the last few years and still powers up most of the websites and applications on the World Wide Web.
 
-Currently supported PHP versions can be seen in [this chapter.](../../getting-started-with-sylius/system-requirements.md)
+Currently supported PHP versions can be seen in [this chapter.](../../getting-started-with-sylius/before-you-begin.md)
 
 #### Main frameworks and libraries
 
