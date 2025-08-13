@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Customizing Business Logic
 
 Sylius offers extensive customization options, allowing you to tailor your eCommerce store to your specific needs. Let’s walk through an example of how you can customize Sylius by implementing a **custom shipping calculator**.

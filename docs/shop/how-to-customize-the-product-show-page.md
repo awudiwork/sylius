@@ -1,18 +1,3 @@
----
-layout:
-  width: default
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # How to customize the product show page?
 
 This guide demonstrates how to customize a selection mechanism on the Sylius product page using a Live Component. The goal is to enhance the user experience (UX) by dynamically updating the main product image and allowing custom radio button styling for variant choices.

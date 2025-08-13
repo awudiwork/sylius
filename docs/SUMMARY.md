@@ -9,7 +9,7 @@
 ## Getting Started with Sylius
 
 * [Choosing Sylius: When and Why](getting-started-with-sylius/choosing-sylius-when-and-why.md)
-* [Before You Begin](getting-started-with-sylius/system-requirements.md)
+* [Before You Begin](getting-started-with-sylius/before-you-begin.md)
 * [Installation](getting-started-with-sylius/sylius-ce-installation-with-docker.md)
 * [Basic Configuration](getting-started-with-sylius/basic-configuration.md)
 * [Shipping & Payment](getting-started-with-sylius/shipping-and-payment.md)
@@ -95,6 +95,7 @@
   * [Contributing Documentation](the-book/contributing/contributing-documentation.md)
   * [Contributing Translations](the-book/contributing/contributing-translations.md)
   * [Key Contributors](the-book/contributing/key-contributors.md)
+* [👨‍🎓 Sylius Course](https://academy.sylius.com/course/sylius-practical-mastery-course/)
 
 ## 🛠️ The Customization Guide
 
@@ -151,6 +152,8 @@
 * [Shipping](shipping/README.md)
   * [How to add a custom shipping method rule?](shipping/how-to-add-a-custom-shipping-method-rule.md)
   * [How to add a custom shipping calculator?](shipping/how-to-add-a-custom-shipping-calculator.md)
+* [B2B](b2b/README.md)
+  * [How to use B2B Suite without Elasticsearch?](b2b/how-to-use-b2b-suite-without-elasticsearch.md)
 * [Shop](shop/README.md)
   * [How to disable localized URLs?](shop/how-to-disable-localized-urls.md)
   * [How to customize the product show page?](shop/how-to-customize-the-product-show-page.md)
