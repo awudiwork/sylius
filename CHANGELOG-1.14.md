@@ -1,5 +1,13 @@
 # CHANGELOG FOR `1.14.X`
 
+## v1.14.9 (2025-08-14)
+
+#### Details
+
+- [#18293](https://github.com/Sylius/Sylius/pull/18293) Revert "[Fixtures] Make factory example constructor arguments protected" ([@GSadee](https://github.com/GSadee))
+- [#18290](https://github.com/Sylius/Sylius/pull/18290) [CS][DX] Refactor
+- [#18296](https://github.com/Sylius/Sylius/pull/18296) [Admin][Product] Fix not blank product code constraint message ([@SVillette](https://github.com/SVillette))
+
 ## v1.14.8 (2025-07-31)
 
 #### Details
