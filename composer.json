@@ -190,7 +190,7 @@
         "behat/gherkin": "^4.13.0",
         "lexik/jwt-authentication-bundle": "^2.18",
         "stof/doctrine-extensions-bundle": "1.8.0",
-        "symfony/serializer": "^6.4.23",
+        "symfony/serializer": "6.4.23",
         "symfony/validator": "5.4.25",
         "twig/twig": "3.9.0"
     },
