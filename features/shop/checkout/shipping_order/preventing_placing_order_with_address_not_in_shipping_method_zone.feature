@@ -16,12 +16,12 @@ Feature: Preventing placing an order with address not in shipping method zone
         And the store has "DHL" shipping method with "$10.00" fee within the "UK" zone
         And the store allows paying "Offline"
 
-    @ui @api
+    @api @ui
     Scenario: Being prevented from placing an order with a shipping address that's not in the shipping method zone after completing the shipping method choice step
         Given I added product "Ubi T-Shirt" to the cart
         And I have completed addressing step with email "guest@example.com" and "United Kingdom" based billing address
         And I have proceeded order with "DHL" shipping method and "Offline" payment
         But this shipping method has changed zone to "ES" zone
-        When I want to complete checkout
+        When I try to complete checkout
         Then I should not be able to confirm order because products do not fit "DHL" requirements
         And I should not see the thank you page
