@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Catalog Promotions
 
 The **Catalog Promotions** system in Sylius offers a powerful way to apply promotions across multiple products at once. If you're familiar with [**Cart Promotions**](../carts-and-orders/cart-promotions.md), Catalog Promotions will feel familiar, but they apply directly to products in your catalog, rather than at checkout.

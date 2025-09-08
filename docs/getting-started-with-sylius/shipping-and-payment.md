@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Shipping & Payment
 
 With the basic configuration completed, we can now move forward and set up the necessary options for customers to buy your products. During the checkout process, customers need to choose how they want their orders to be shipped and paid for.

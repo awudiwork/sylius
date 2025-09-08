@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Summary
 
 We hope you’ve enjoyed your first steps with Sylius! Now that you’ve gained some foundational knowledge, the possibilities are endless for how you can use Sylius, customize it, and add new features with both your code and contributions from the community.
@@ -19,11 +5,11 @@ We hope you’ve enjoyed your first steps with Sylius! Now that you’ve gained 
 #### A Few Tips Before You Go:
 
 * **Want to dive deeper into Sylius features?**\
-  Check out [The Book](../the-book/index.md), where you'll find comprehensive information on everything Sylius has to offer.
+  Check out [The Book](../the-book/introduction-to-sylius.md), where you'll find comprehensive information on everything Sylius has to offer.
 * **Interested in making more customizations?**\
-  Explore [The Customization Guide](../the-customization-guide/index.md) for insights on how to tailor Sylius to your unique needs.
+  Explore [The Customization Guide](broken-reference) for insights on how to tailor Sylius to your unique needs.
 * **Have cool features to share with the community?**\
-  Head over to the [Sylius Plugins](../the-book/sylius-plugins/) chapter to learn how to contribute your work.
+  Head over to the [Sylius Plugins](broken-reference) chapter to learn how to contribute your work.
 
 ***
 

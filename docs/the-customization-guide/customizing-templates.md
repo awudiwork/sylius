@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Customizing Templates
 
 Sylius offers two primary template types: Shop and Admin. Furthermore, it allows you to create custom templates tailored to your specific needs, providing flexibility for unique requirements.
@@ -116,9 +102,7 @@ sylius_twig_hooks:
 ```twig
 <!-- Template content -->
 <div id="container">
-    {% raw %}
-{% hook 'hook_name' %}
-{% endraw %} <!-- It’s still the same name, but it is configured as ‘parent_hook_name.hook_name’.-->
+    {% hook 'hook_name' %} <!-- It’s still the same name, but it is configured as ‘parent_hook_name.hook_name’.-->
 </div>
 <!-- Additional content -->
 ```
@@ -134,9 +118,7 @@ Mechanizm described above can be controlled manually. If you need to set the hoo
 ```twig
 <!-- Template content -->
 <div id="container">
-    {% raw %}
-{% hook 'hook_name' with { _prefixes: ['custom_prefix_not_related_with_a_parent'] } %}
-{% endraw %}
+    {% hook 'hook_name' with { _prefixes: ['custom_prefix_not_related_with_a_parent'] } %}
 </div>
 <!-- Additional content -->
 ```
@@ -232,19 +214,19 @@ As a rule of thumb in Sylius, each hookable is configured as a multiple of 100. 
 
 Let's say we'd like to customize our offer view and we'd like to add an information about estimated shipping time:
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 There're two way's of finding out the hook name you'd like to hook-in.
 
 1. Profiler\
    By Clicking the hooks option you'll be taken to the specific profiler page
 
-![](<../.gitbook/assets/image (4) (1).png>)\
+![](<../.gitbook/assets/image (4) (1) (1) (1).png>)\
 
 
 Here, you have whole Call Graph regarding opened view, where you can search for specific element.
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. Browser Developer Tools
 
@@ -343,7 +325,6 @@ To determine the template you need to override:
 Copy the original template to your path and customize it as needed. Example:
 
 ```twig
-{% raw %}
 {% extends '@SyliusShop/layout.html.twig' %}
 {% import '@SyliusUi/Macro/messages.html.twig' as messages %}
 
@@ -367,7 +348,6 @@ Copy the original template to your path and customize it as needed. Example:
     </form>
 </div>
 {% endblock %}
-{% endraw %}
 ```
 
 Clear the cache if changes aren't visible: `php bin/console cache:clear`
@@ -375,7 +355,7 @@ Clear the cache if changes aren't visible: `php bin/console cache:clear`
 ## Customizing Templates via Sylius Themes
 
 {% hint style="info" %}
-Read more in the [Themes documentation in The Book](../the-book/frondend-and-themes.md) and [the bundle's documentation on GitHub](https://github.com/Sylius/SyliusThemeBundle/blob/master/docs/index.md).
+Read more in the [Themes documentation in The Book](../the-book/frontend-and-themes.md) and [the bundle's documentation on GitHub](https://github.com/Sylius/SyliusThemeBundle/blob/master/docs/index.md).
 {% endhint %}
 
 ## Global Twig variables

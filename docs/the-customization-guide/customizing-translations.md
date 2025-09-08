@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Customizing Translations
 
 Translations in Sylius can be easily customized to match your business needs better. Whether you want to adjust wording for clarity, branding, or localization, you can override default translations in your project.

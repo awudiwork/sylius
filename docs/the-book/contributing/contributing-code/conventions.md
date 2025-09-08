@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Conventions
 
 This document describes conventions used in the Sylius to make it more consistent and predictable. Any new code delivered to Sylius should comply with the following conventions, we also encourage you to use them in your own projects based on Sylius.

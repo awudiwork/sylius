@@ -1,21 +1,7 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Events
 
 {% hint style="info" %}
-You can learn more about events in general in [the Symfony documentation](https://symfony.com/doc/current/event\_dispatcher.html).
+You can learn more about events in general in [the Symfony documentation](https://symfony.com/doc/current/event_dispatcher.html).
 {% endhint %}
 
 ### What is the naming convention of Sylius events?

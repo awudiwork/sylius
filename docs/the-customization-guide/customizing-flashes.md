@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Customizing Flashes
 
 Flash messages in Sylius provide feedback after actions like adding resources in the admin panel or registering in the shop. You can easily customize them to better fit your needs.
