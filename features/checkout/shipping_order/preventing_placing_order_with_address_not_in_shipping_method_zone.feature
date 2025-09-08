@@ -25,4 +25,3 @@ Feature: Preventing placing an order with address not in shipping method zone
         When I want to complete checkout
         Then I should not be able to confirm order because products do not fit "DHL" requirements
         And I should not see the thank you page
-
