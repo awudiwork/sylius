@@ -1,3 +1,14 @@
+# UPGRADE FROM `v1.14.10` TO `v1.14.11`
+
+## Classes and Interfaces Deprecations
+
+1. These classes have been deprecated and will be removed in 2.0.
+
+| Deprecated class/interface                                 | Will be replaced with                                                    |
+|------------------------------------------------------------|--------------------------------------------------------------------------|
+| `Sylius\Bundle\OrderBundle\Controller\OrderItemController` | `Sylius\Bundle\ShopBundle\Twig\Component\Product\AddToCartFormComponent` |
+| `Sylius\Component\Order\CartActions`                       | `Sylius\Component\Order\SyliusCartEvents`                                |
+
 # UPGRADE FROM `v1.14.1` TO `v1.14.2`
 
 1. Extracted a new `sylius.order_processing.adjustment_clearing_types` parameter responsible for the collection of adjustment types to be cleared during order processing.
