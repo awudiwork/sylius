@@ -1,0 +1,18 @@
+{% from '@SyliusAdmin/shared/helper/breadcrumbs.html.twig' import breadcrumbs %}
+
+{% set route = app.request.attributes.get('_route') %}
+
+{% if route == 'sylius_admin_customer_order_index' %}
+    {% set id = hookable_metadata.context.resources.requestConfiguration.request.attributes.get('id') %}
+    {{ breadcrumbs([
+        { name: 'sylius.ui.dashboard', url: path('sylius_admin_dashboard'), active: false },
+        { name: 'sylius.ui.customers'|trans, url: path('sylius_admin_customer_index'), active: false },
+        { name: customer.id|default(id), url: path('sylius_admin_customer_show', {'id': id }), active: false },
+        { name: 'sylius.ui.orders'|trans, active: true },
+    ]) }}
+{% elseif route == 'sylius_admin_order_index' %}
+    {{ breadcrumbs([
+        { name: 'sylius.ui.dashboard', url: path('sylius_admin_dashboard'), active: false },
+        { name: 'sylius.ui.orders'|trans, url: path('sylius_admin_order_index'), active: true },
+    ]) }}
+{% endif %}
