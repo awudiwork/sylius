@@ -2,7 +2,7 @@
 
 {% set route = app.request.attributes.get('_route') %}
 
-{% if route == 'sylius_admin_customer_order_index' %}
+{% if route == 'sylius_admin_customer_order_index'  %}
     {% set id = hookable_metadata.context.resources.requestConfiguration.request.attributes.get('id') %}
     {{ breadcrumbs([
         { name: 'sylius.ui.dashboard', url: path('sylius_admin_dashboard'), active: false },
@@ -16,3 +16,5 @@
         { name: 'sylius.ui.orders'|trans, url: path('sylius_admin_order_index'), active: true },
     ]) }}
 {% endif %}
+
+{{ dump() }}
