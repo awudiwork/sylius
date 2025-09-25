@@ -1,4 +1,4 @@
-# UPGRADE FROM v1.14.10 TO v1.14.11
+# UPGRADE FROM `v1.14.11` TO `v1.14.12`
 
 ## Configuration
 
@@ -18,6 +18,17 @@ parameters:
         - sylius_checkout_complete
         - my_custom_group
 ```
+
+# UPGRADE FROM `v1.14.10` TO `v1.14.11`
+
+## Classes and Interfaces Deprecations
+
+1. These classes have been deprecated and will be removed in 2.0.
+
+| Deprecated class/interface                                 | Will be replaced with                                                    |
+|------------------------------------------------------------|--------------------------------------------------------------------------|
+| `Sylius\Bundle\OrderBundle\Controller\OrderItemController` | `Sylius\Bundle\ShopBundle\Twig\Component\Product\AddToCartFormComponent` |
+| `Sylius\Component\Order\CartActions`                       | `Sylius\Component\Order\SyliusCartEvents`                                |
 
 # UPGRADE FROM `v1.14.1` TO `v1.14.2`
 
