@@ -1,5 +1,13 @@
 # CHANGELOG FOR `1.14.X`
 
+## v1.14.11 (2025-09-25)
+
+#### Details
+
+- [#18364](https://github.com/Sylius/Sylius/pull/18364) [BUGFIX] Correct pricing currency resolution in product variant view ([@tomkalon](https://github.com/tomkalon))
+- [#18361](https://github.com/Sylius/Sylius/pull/18361) [DEPRECATIONS] Mark `CartActions` interface and `OrderItemController` as deprecated ([@tomkalon](https://github.com/tomkalon))
+- [#18378](https://github.com/Sylius/Sylius/pull/18378) [AdminBundle] Hide Impersonate button when user shop account is locked ([@crydotsnake](https://github.com/crydotsnake))
+
 ## v1.14.10 (2025-09-09)
 
 #### Details
