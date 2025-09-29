@@ -1,3 +1,24 @@
+# UPGRADE FROM `v1.14.11` TO `v1.14.12`
+
+## Configuration
+
+1. Checkout Complete validation groups
+The validation_groups for the `sylius_shop_checkout_complete` step are no longer defined in routing.
+They are now configured via the `sylius.form.type.checkout_complete.validation_groups parameter`, consistent with other checkout steps.
+
+When overriding this parameter in your application, keep in mind that it replaces the default list rather than merging with it.
+To preserve the existing behaviour, make sure to include both `sylius` and `sylius_checkout_complete` in addition to any custom groups you need.
+
+Example configuration:
+
+```yaml
+parameters:
+    sylius.form.type.checkout_complete.validation_groups:
+        - sylius
+        - sylius_checkout_complete
+        - my_custom_group
+```
+
 # UPGRADE FROM `v1.14.10` TO `v1.14.11`
 
 ## Classes and Interfaces Deprecations
