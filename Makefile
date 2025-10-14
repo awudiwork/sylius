@@ -20,6 +20,9 @@ backend:
 	bin/console doctrine:database:create --no-interaction
 	bin/console sylius:install --no-interaction
 	bin/console sylius:fixtures:load default --no-interaction
+	@echo "Fixing permissions..."
+	chown -R www-data:www-data var/ public/media/ 2>/dev/null || true
+	chmod -R 775 var/ public/media/ 2>/dev/null || true
 
 frontend:
 	yarn install --pure-lockfile
@@ -28,6 +31,9 @@ frontend:
 behat: behat-cli behat-non-js behat-js
 
 init: install backend frontend
+	@echo "Deployment completed. Fixing final permissions..."
+	chown -R www-data:www-data var/ public/media/ 2>/dev/null || true
+	chmod -R 775 var/ public/media/ 2>/dev/null || true
 
 ci: init phpstan phpunit behat
 

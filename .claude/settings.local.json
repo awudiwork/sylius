@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:docs.sylius.com)",
+      "mcp__mcp-bravesearch__brave_web_search",
+      "mcp__fetch__fetch",
+      "WebSearch",
+      "Bash(docker compose config:*)",
+      "Bash(/dev/null)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
