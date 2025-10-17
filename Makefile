@@ -17,7 +17,9 @@ install:
 	composer install --no-interaction --no-scripts
 
 backend:
-	bin/console doctrine:database:create --no-interaction
+	@echo "Creating required directories..."
+	mkdir -p var/log var/cache public/media
+	bin/console doctrine:database:create --no-interaction || true
 	bin/console sylius:install --no-interaction
 	bin/console sylius:fixtures:load default --no-interaction
 	@echo "Fixing permissions..."

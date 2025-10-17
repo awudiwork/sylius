@@ -6,7 +6,8 @@
       "mcp__fetch__fetch",
       "WebSearch",
       "Bash(docker compose config:*)",
-      "Bash(/dev/null)"
+      "Bash(/dev/null)",
+      "Bash(dos2unix:*)"
     ],
     "deny": [],
     "ask": []
