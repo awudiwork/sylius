@@ -6,6 +6,7 @@
 - [项目架构说明](#项目架构说明)
 - [开发环境部署](#开发环境部署)
 - [生产环境部署](#生产环境部署)
+- [生产环境代码更新](#生产环境代码更新)
 - [Docker 镜像管理](#docker-镜像管理)
 - [常用管理命令](#常用管理命令)
 - [故障排查](#故障排查)
@@ -431,6 +432,357 @@ services:
 - [ ] 使用 Nginx/Apache 反向代理并配置 SSL 证书
 - [ ] 定期备份数据库和上传文件
 - [ ] 配置日志监控
+
+---
+
+## 生产环境代码更新
+
+当本地代码有更新需要同步到生产服务器时,按照以下流程操作。
+
+### 更新前准备
+
+#### 1. 本地打包代码
+
+在本地项目目录 (如 `E:\Code\yondermedia`) 执行:
+
+```bash
+# Windows PowerShell
+cd E:\Code\yondermedia
+
+# 确保依赖是最新的
+composer install
+
+# 打包代码 (包含 vendor,避免服务器网络问题)
+zip -r sylius.zip . `
+  -x ".env.local" `
+  -x "docker-compose.yml" `
+  -x "compose.override.yml" `
+  -x "config/packages/framework.yaml" `
+  -x ".docker/dev/Dockerfile" `
+  -x "node_modules/*" `
+  -x "var/cache/*" `
+  -x "var/log/*" `
+  -x "public/media/*" `
+  -x "public/bundles/*" `
+  -x ".git/*"
+```
+
+**⚠️ 重要: 必须排除的文件**
+
+| 文件/目录 | 原因 |
+|---------|------|
+| `.env.local` | 生产环境有独立的环境配置 (APP_ENV=prod) |
+| `docker-compose.yml` | 可能有生产环境特定端口配置 |
+| `framework.yaml` | 可能有生产环境特定的 trusted_proxies 配置 |
+| `Dockerfile` | 避免覆盖生产环境镜像配置 |
+| `var/cache/*`, `var/log/*` | 避免覆盖生产环境缓存和日志 |
+| `public/media/*` | 避免覆盖用户上传的文件 |
+| `node_modules/*` | 服务器端重新安装 |
+
+#### 2. 上传到服务器
+
+```bash
+# 方式1: 使用 scp 上传
+scp sylius.zip user@your-server:/var/www/sylius/
+
+# 方式2: 使用 SFTP/FTP 客户端上传到 /var/www/sylius/
+```
+
+### 标准更新流程
+
+SSH 登录到生产服务器后执行:
+
+```bash
+# 1. 进入项目目录
+cd /var/www/sylius
+
+# 2. 备份当前代码 (可选但强烈推荐)
+zip -r ../sylius-backup-$(date +%Y%m%d-%H%M%S).zip .
+
+# 3. 确保目录权限正确
+sudo chown -R $USER:$USER /var/www/sylius
+
+# 4. 解压覆盖
+unzip -o sylius.zip
+
+# 5. 删除压缩包
+rm sylius.zip
+
+# 6. 重新安装依赖 (如果 composer.json 有变化)
+docker compose exec app composer install --no-dev --optimize-autoloader --no-scripts
+
+# 7. 优化 Composer 自动加载 (关键!提升性能 10-50 倍)
+docker compose exec app composer dump-autoload --optimize --classmap-authoritative
+
+# 8. 更新前端依赖
+docker compose exec app yarn install
+
+# 9. 重新编译前端资源 (生产模式)
+docker compose exec app yarn encore production
+
+# 10. 执行数据库迁移 (如果有新迁移)
+docker compose exec app php bin/console doctrine:migrations:migrate --no-interaction
+
+# 11. 清理并预热缓存 (关键!提升首次访问速度 5-20 倍)
+docker compose exec app rm -rf var/cache/prod/*
+docker compose exec app php bin/console cache:warmup --env=prod
+
+# 12. 修复文件权限
+docker compose exec app chown -R www-data:www-data var/ public/
+
+# 13. 重启容器 (清空 Opcache 缓存)
+docker compose restart app
+```
+
+### 一键更新脚本
+
+```bash
+cd /var/www/sylius && \
+sudo chown -R $USER:$USER /var/www/sylius && \
+unzip -o sylius.zip && \
+rm sylius.zip && \
+docker compose exec app composer install --no-dev --optimize-autoloader --no-scripts && \
+docker compose exec app composer dump-autoload --optimize --classmap-authoritative && \
+docker compose exec app yarn install && \
+docker compose exec app yarn encore production && \
+docker compose exec app php bin/console doctrine:migrations:migrate --no-interaction && \
+docker compose exec app rm -rf var/cache/prod/* && \
+docker compose exec app php bin/console cache:warmup --env=prod && \
+docker compose exec app chown -R www-data:www-data var/ public/ && \
+docker compose restart app
+```
+
+### 轻量级更新 (仅代码修改,无依赖变化)
+
+如果只修改了 PHP/Twig 代码,没有改动 `composer.json`、`package.json`:
+
+```bash
+cd /var/www/sylius && \
+sudo chown -R $USER:$USER /var/www/sylius && \
+unzip -o sylius.zip && \
+rm sylius.zip && \
+docker compose exec app composer dump-autoload --optimize --classmap-authoritative && \
+docker compose exec app rm -rf var/cache/prod/* && \
+docker compose exec app php bin/console cache:warmup --env=prod && \
+docker compose exec app chown -R www-data:www-data var/ public/ && \
+docker compose restart app
+```
+
+### 常见问题处理
+
+#### 问题1: bin/console 权限错误
+
+**错误信息:**
+```
+exec: "bin/console": permission denied
+```
+
+**解决方案:**
+```bash
+# 添加执行权限
+docker compose exec app chmod +x bin/console
+
+# 或使用 php 直接执行
+docker compose exec app php bin/console cache:clear --env=prod
+```
+
+#### 问题2: Windows 换行符问题
+
+**错误信息:**
+```
+env: 'php\r': No such file or directory
+```
+
+**解决方案:**
+```bash
+# 方式1: 安装并使用 dos2unix
+docker compose exec app apt-get update
+docker compose exec app apt-get install -y dos2unix
+docker compose exec app dos2unix bin/console
+
+# 方式2: 使用 sed 转换
+docker compose exec app sed -i 's/\r$//' bin/console
+
+# 方式3: 直接用 php 执行 (推荐)
+docker compose exec app php bin/console cache:clear --env=prod
+```
+
+#### 问题3: Composer 依赖安装慢或超时
+
+**原因:** GitHub 下载慢或需要 SSH 认证
+
+**解决方案:**
+```bash
+# 进入容器
+docker compose exec app bash
+
+# 添加 GitHub 信任
+ssh-keyscan github.com >> ~/.ssh/known_hosts
+
+# 使用国内镜像加速
+composer config -g repos.packagist composer https://mirrors.aliyun.com/composer/
+
+# 重新安装
+composer clear-cache
+composer install --no-dev --optimize-autoloader --no-scripts
+
+# 退出容器
+exit
+```
+
+#### 问题4: symfony/runtime 缺失
+
+**错误信息:**
+```
+Fatal error: Uncaught LogicException: Symfony Runtime is missing
+```
+
+**解决方案:**
+```bash
+# 删除旧依赖重新安装
+docker compose exec app rm -rf vendor/
+docker compose exec app composer install --no-scripts
+```
+
+#### 问题5: public/assets/ 目录下文件缺失 (如 UEditor)
+
+**问题:** 解压后发现 `public/assets/ueditor/` 等静态资源文件不存在
+
+**原因:**
+1. 打包时可能排除了 `public/assets/` 目录
+2. 解压时权限不足,部分文件未解压成功
+
+**解决方案:**
+
+```bash
+# 方式1: 单独上传静态资源目录
+# 本地打包
+cd E:\Code\yondermedia
+zip -r assets.zip public/assets/
+
+# 上传并解压
+scp assets.zip user@your-server:/var/www/sylius/
+ssh user@your-server
+cd /var/www/sylius
+sudo chown -R $USER:$USER /var/www/sylius
+unzip -o assets.zip
+rm assets.zip
+docker compose exec app chown -R www-data:www-data public/assets/
+
+# 方式2: 重新打包时确保包含 public/assets/
+# 修改打包命令,不排除 public/assets/
+zip -r sylius.zip . \
+  -x ".env.local" \
+  -x "docker-compose.yml" \
+  -x "node_modules/*" \
+  -x "var/cache/*" \
+  -x "var/log/*" \
+  -x "public/media/*" \      # 只排除 media
+  -x "public/bundles/*" \    # 只排除 bundles
+  -x ".git/*"
+  # public/assets/ 会被保留
+
+# 方式3: 使用 sudo 确保权限正确
+cd /var/www/sylius
+sudo chown -R $USER:$USER /var/www/sylius
+unzip -o sylius.zip
+docker compose exec app chown -R www-data:www-data public/
+```
+
+**验证:**
+```bash
+# 检查文件是否存在
+ls -la /var/www/sylius/public/assets/ueditor/
+docker compose exec app ls -la /app/public/assets/ueditor/
+
+# 测试访问
+curl -I http://your-domain.com/assets/ueditor/ueditor.config.js
+```
+
+#### 问题6: 更新后访问慢
+
+**原因:** 缓存未优化、自动加载未优化
+
+**解决方案 (关键优化步骤):**
+```bash
+# 1. 禁用 Blackfire 警告
+docker compose exec app rm -f /usr/local/etc/php/conf.d/docker-php-ext-blackfire.ini
+
+# 2. 优化 Composer 自动加载 (关键!)
+docker compose exec app composer dump-autoload --optimize --classmap-authoritative
+
+# 3. 清理并预热缓存
+docker compose exec app rm -rf var/cache/prod/*
+docker compose exec app php bin/console cache:warmup --env=prod
+
+# 4. 修复权限
+docker compose exec app chown -R www-data:www-data var/ public/
+
+# 5. 重启容器清空 Opcache
+docker compose restart app
+```
+
+**性能优化说明:**
+
+| 优化项 | 作用 | 性能提升 |
+|-------|------|---------|
+| `composer dump-autoload --optimize --classmap-authoritative` | 生成优化的类映射表,不再扫描文件系统 | 类加载速度提升 10-50 倍 |
+| `cache:warmup --env=prod` | 预生成所有路由、模板、容器缓存 | 首次访问速度提升 5-20 倍 |
+| `docker compose restart app` | 清空 Opcache,重新加载新代码 | 避免使用旧的字节码缓存 |
+
+### 更新验证
+
+```bash
+# 1. 检查容器状态
+docker compose ps
+
+# 2. 查看应用日志
+docker compose logs -f --tail=50 app
+
+# 3. 验证环境配置
+docker compose exec app php bin/console about
+
+# 应该显示:
+# Environment: prod
+# Debug: false
+# OPcache: Enabled
+
+# 4. 测试页面响应时间
+time curl -s http://your-domain.com/admin/ -o /dev/null -w "Time: %{time_total}s\n"
+
+# 5. 检查数据库同步
+docker compose exec app php bin/console doctrine:schema:validate
+```
+
+### 更新后数据备份
+
+```bash
+# 备份数据库
+docker compose exec mysql mysqldump -uroot -pmysql sylius_prod > backup-$(date +%Y%m%d).sql
+
+# 备份上传文件
+tar -czf media-backup-$(date +%Y%m%d).tar.gz public/media/
+```
+
+### 回滚操作 (如果更新失败)
+
+```bash
+# 1. 停止容器
+docker compose down
+
+# 2. 恢复代码
+cd /var/www
+rm -rf sylius
+unzip sylius-backup-YYYYMMDD-HHMMSS.zip -d sylius
+
+# 3. 恢复数据库 (如果需要)
+docker compose up -d mysql
+sleep 10
+docker compose exec mysql mysql -uroot -pmysql sylius_prod < backup-YYYYMMDD.sql
+
+# 4. 重启所有服务
+docker compose up -d
+```
 
 ---
 
@@ -2789,3 +3141,17 @@ crontab -e
 - ✅ 添加图片上传与缩略图生成机制详解
 - ✅ 添加 Nginx 反向代理性能优化方案（HTTP/1.1、Gzip、缓冲优化）
 - ✅ 添加缓存目录权限问题排查与解决方案
+
+ # 添加 GitHub 到信任列表
+  ssh-keyscan github.com >> ~/.ssh/known_hosts
+# 使用腾讯云镜像
+  composer config -g repos.packagist composer https://mirrors.cloud.tencent.com/composer/
+
+● Nginx 配置正常!现在执行性能优化:
+
+  docker compose exec app rm -f /usr/local/etc/php/conf.d/docker-php-ext-blackfire.ini && \
+  docker compose exec app composer dump-autoload --optimize --classmap-authoritative && \
+  docker compose exec app rm -rf var/cache/prod/* && \
+  docker compose exec app php bin/console cache:warmup --env=prod && \
+  docker compose exec app chown -R www-data:www-data var/ && \
+  docker compose restart app
