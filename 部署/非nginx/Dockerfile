@@ -23,18 +23,11 @@ RUN docker-php-ext-configure gd --with-webp --with-jpeg --with-freetype \
     && docker-php-ext-configure intl \
     && docker-php-ext-install pdo_mysql mbstring exif pcntl bcmath gd intl zip opcache
 
-# 安装 Composer  配置华为云镜像源（加速国内下载）
+# 安装 Composer
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
-# RUN composer config -g repo.packagist composer https://repo.huaweicloud.com/repository/php/
 
 # 安装 dos2unix 工具(用于转换 Windows 换行符)
 RUN apt-get update && apt-get install -y dos2unix && rm -rf /var/lib/apt/lists/*
-
-# 安装 Node.js 20.x 和 Yarn
-RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
-    && apt-get install -y nodejs \
-    && npm install -g yarn \
-    && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # 设置工作目录
 WORKDIR /app
@@ -80,26 +73,18 @@ autorestart=true' > /etc/supervisor/conf.d/supervisord.conf
 RUN echo '#!/bin/bash\n\
 set -e\n\
 \n\
-echo "🚀 Starting Sylius Docker Container..."\n\
-\n\
 # 修复 bin/console 换行符和权限\n\
 if [ -f /app/bin/console ]; then\n\
-    echo "✅ Fixing bin/console permissions and line endings..."\n\
     dos2unix /app/bin/console 2>/dev/null || sed -i "s/\r$//" /app/bin/console\n\
     chmod +x /app/bin/console\n\
 fi\n\
 \n\
 # 创建必要的目录\n\
-echo "📁 Creating required directories..."\n\
 mkdir -p /app/var/cache /app/var/log /app/public/media /app/config\n\
 \n\
 # 修复目录权限\n\
-echo "🔐 Fixing directory permissions..."\n\
 chown -R www-data:www-data /app/var /app/public/media /app/config 2>/dev/null || true\n\
 chmod -R 775 /app/var /app/public/media 2>/dev/null || true\n\
-\n\
-echo "✅ Container initialization completed"\n\
-echo "🌐 Starting Nginx and PHP-FPM..."\n\
 \n\
 # 启动 supervisord\n\
 exec /usr/bin/supervisord -c /etc/supervisor/conf.d/supervisord.conf\n\

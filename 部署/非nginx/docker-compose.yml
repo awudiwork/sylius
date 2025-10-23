@@ -14,7 +14,7 @@ services:
             - ./.docker/dev/php.ini:/usr/local/etc/php/php.ini:delegated
             - ./.docker/dev/php.ini:/usr/local/etc/php/cli/php.ini:delegated
         ports:
-            - ${APP_PORT:-127.0.0.1:8080}:80  # 仅本地访问，通过宿主机 Nginx 反向代理
+            - ${APP_PORT:-80}:80
         depends_on:
             mysql:
                 condition: service_healthy  # 等待 MySQL 健康检查通过
@@ -61,10 +61,10 @@ services:
         image: blackfire/blackfire:2
         environment:
             BLACKFIRE_LOG_LEVEL: 4
-            BLACKFIRE_SERVER_ID: ""
-            BLACKFIRE_SERVER_TOKEN: ""
-            BLACKFIRE_CLIENT_ID: ""
-            BLACKFIRE_CLIENT_TOKEN: ""
+            BLACKFIRE_SERVER_ID: ~
+            BLACKFIRE_SERVER_TOKEN: ~
+            BLACKFIRE_CLIENT_ID: ~
+            BLACKFIRE_CLIENT_TOKEN: ~
             BLACKFIRE_DISABLE_LEGACY_PORT: 1
         ports:
             - ${BLACKFIRE_PORT:-8307}:8307

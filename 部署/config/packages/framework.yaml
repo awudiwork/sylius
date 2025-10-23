@@ -1,0 +1,12 @@
+framework:
+    annotations: false
+    secret: '%env(APP_SECRET)%'
+    form:
+        enabled: true
+    csrf_protection: true
+    http_method_override: true
+    session:
+        handler_id: ~
+    # 配置信任的反向代理
+    trusted_proxies: '127.0.0.1,REMOTE_ADDR'
+    trusted_headers: ['x-forwarded-for', 'x-forwarded-host', 'x-forwarded-proto', 'x-forwarded-port']

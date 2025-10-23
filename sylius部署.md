@@ -160,7 +160,7 @@ services:
 
 ```bash
 # 方式1: 先启动容器再初始化 (推荐 - 首次部署)
-docker compose up -d           # 启动容器
+docker compose up -d           # 启动容器(网络不好就先上传镜像)
 sleep 15                       # 等待 MySQL 完全启动 (首次部署必须!)
 docker compose exec app make init  # 在容器内执行初始化
 
@@ -188,6 +188,7 @@ curl http://localhost
 ```
 
 **默认访问地址**:
+
 - 前台: http://localhost
 - 后台: http://localhost/admin
 - 邮件测试: http://localhost:8025
@@ -222,6 +223,7 @@ docker compose exec app yarn build
 ```bash
 # 创建项目目录
 sudo mkdir -p /var/www/sylius
+  # 将整个项目目录的所有权改为当前用户
 sudo chown -R $USER:$USER /var/www/sylius
 
 # 上传项目代码
@@ -241,8 +243,10 @@ scp -r ./sylius user@server:/var/www/
 
 **核心文件清单**:
 
+Makefile  framework.yaml Dockerfile docker-compose.yml .env.local
+
 | 文件 | 路径 | 作用 | 是否必需 |
-|------|------|------|----------|
+|:-----|------|------|----------|
 | `Makefile` | 项目根目录 | 自动化部署脚本 | ✅ 强烈推荐 |
 | `framework.yaml` | `config/packages/` | Symfony 核心配置（包括 trusted proxies） | ✅ 必需 |
 | `Dockerfile` | `.docker/dev/` | Docker 镜像构建配置 | ✅ 必需 |
@@ -503,10 +507,17 @@ zip -r ../sylius-backup-$(date +%Y%m%d-%H%M%S).zip .
 sudo chown -R $USER:$USER /var/www/sylius
 
 # 4. 解压覆盖
-unzip -o sylius.zip
+sudo unzip -o sylius.zip
 
 # 5. 删除压缩包
 rm sylius.zip
+
+# 解决
+docker compose exec app rm -rf vendor/*
+docker compose exec app rm -rf var/cache/*
+
+  # 1. 安装 symfony/runtime 包
+  docker compose exec app composer require symfony/runtime --no-scripts
 
 # 6. 重新安装依赖 (如果 composer.json 有变化)
 docker compose exec app composer install --no-dev --optimize-autoloader --no-scripts
@@ -526,12 +537,27 @@ docker compose exec app php bin/console doctrine:migrations:migrate --no-interac
 # 11. 清理并预热缓存 (关键!提升首次访问速度 5-20 倍)
 docker compose exec app rm -rf var/cache/prod/*
 docker compose exec app php bin/console cache:warmup --env=prod
+docker compose exec app bin/console cache:clear
+docker compose exec app bin/console cache:warmup
 
 # 12. 修复文件权限
+docker compose exec app chown -R www-data:www-data vendor/
+docker compose exec app chmod -R 775 vendor/
 docker compose exec app chown -R www-data:www-data var/ public/
+
 
 # 13. 重启容器 (清空 Opcache 缓存)
 docker compose restart app
+
+
+  docker compose exec app rm -f /usr/local/etc/php/conf.d/docker-php-ext-blackfire.ini && \
+  docker compose exec app composer dump-autoload --optimize --classmap-authoritative && \
+  docker compose exec app rm -rf var/cache/prod/* && \
+  docker compose exec app php bin/console cache:warmup --env=prod && \
+  docker compose exec app chown -R www-data:www-data var/ && \
+  docker compose restart app
+
+
 ```
 
 ### 一键更新脚本
@@ -573,6 +599,7 @@ docker compose restart app
 #### 问题1: bin/console 权限错误
 
 **错误信息:**
+
 ```
 exec: "bin/console": permission denied
 ```
@@ -993,42 +1020,6 @@ docker compose exec app bash -c "chown -R www-data:www-data var/ public/media/ &
 
 ## 故障排查
 
-### 1. 端口冲突
-
-**问题**: `make init` 失败,提示端口已被占用
-
-**解决方案**:
-
-```bash
-# 检查端口占用
-lsof -i :80    # Web 端口
-lsof -i :3306  # MySQL 端口
-lsof -i :8025  # Mailhog 端口
-
-# 方式1: 停止冲突服务
-sudo systemctl stop apache2  # 停止 Apache
-sudo systemctl stop nginx    # 停止 Nginx
-sudo systemctl stop mysql    # 停止本地 MySQL
-
-# 方式2: 修改端口 (创建 compose.override.yml)
-cat > compose.override.yml <<EOF
-services:
-  app:
-    ports:
-      - "8080:80"
-  mysql:
-    ports:
-      - "3307:3306"
-  mailhog:
-    ports:
-      - "8026:8025"
-EOF
-
-# 重新启动
-docker compose down
-docker compose up -d
-```
-
 ### 2. 文件上传权限错误
 
 **问题**: 无法上传图片,`public/media/` 权限不足
@@ -1162,11 +1153,17 @@ docker compose exec app composer install
 ### 6. 查看应用日志
 
 ```bash
-# Symfony 生产环境日志
+# Symfony 生产环境日志 错误日志
 docker compose exec app tail -100 /app/var/log/prod.log
-
+docker compose logs app --tail=100
 # Symfony 开发环境日志
 docker compose exec app tail -100 /app/var/log/dev.log
+
+  # 查看 Symfony 日志
+  tail -n 50 var/log/prod.log
+
+  # 或者查看 dev 环境日志
+  tail -n 50 var/log/dev.log
 
 # Nginx 访问日志
 docker compose exec app tail -100 /var/log/nginx/access.log
@@ -1174,7 +1171,8 @@ docker compose exec app tail -100 /var/log/nginx/access.log
 # Nginx 错误日志
 docker compose exec app tail -100 /var/log/nginx/error.log
 
-# PHP-FPM 错误日志
+# PHP-FPM 
+错误日志
 docker compose logs app | grep php-fpm
 ```
 
@@ -1557,7 +1555,7 @@ docker compose start app
 docker compose exec app chown -R www-data:www-data /app/var /app/public/media
 docker compose exec app chmod -R 775 /app/var /app/public/media
 
-# 6. 清空并预热缓存
+# 6. 清空缓存并预热
 docker compose exec app bin/console cache:clear --env=prod --no-debug
 docker compose exec app bin/console cache:warmup --env=prod --no-debug
 
@@ -2843,6 +2841,7 @@ Location: http://172.17.3.80:8090/media/cache/sylius_shop_product_thumbnail/ab/c
 | 管理员头像 | 400x400 px | 200 KB | JPEG/PNG | 正方形头像 |
 
 **上传限制配置**:
+
 ```nginx
 # 宿主机 Nginx (nginx-configs/sylius-ports.conf)
 client_max_body_size 20M;
@@ -3155,3 +3154,29 @@ crontab -e
   docker compose exec app php bin/console cache:warmup --env=prod && \
   docker compose exec app chown -R www-data:www-data var/ && \
   docker compose restart app
+
+
+
+
+
+  docker compose exec mysql mysql -uroot -pmysql sylius_prod -e "SELECT id, code, hostname, enabled,
+  base_currency_id, default_locale_id FROM sylius_channel;"
+
+  # 删除多余的 Channel
+  docker compose exec mysql mysql -uroot -pmysql sylius_prod -e "DELETE FROM sylius_channel WHERE id = 6;"
+
+  # 将唯一的 Channel hostname 设为 NULL（匹配任何域名）
+  docker compose exec mysql mysql -uroot -pmysql sylius_prod -e "UPDATE sylius_channel SET hostname = NULL WHERE id
+  = 5;"
+
+  解决方案 - 在 Linux 服务器上执行:
+
+  # 方案1: 移除镜像源,使用官方源
+  docker compose exec app composer config -g --unset repos.packagist
+
+
+
+
+
+删除目录
+rm -rf ./* ./.[!.]* ./..?*
